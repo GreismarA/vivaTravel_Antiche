@@ -1,0 +1,98 @@
+//HEADER
+.header {
+    background-color: $turquesa;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100vw;
+
+    .logo {
+        width: 80px;
+        height: 45px;
+        margin: 0.5rem 2.5rem;
+        border-radius: 500px;
+    }
+
+    nav {
+        .nav__links {
+            display: flex;
+            align-items: center;
+
+            li {
+                display: inline-block;
+                position: relative;
+                margin: 0.2rem;
+                font-size: 0.8rem;
+                font-weight: 300;
+                padding: 0.1rem;
+
+                a {
+                    color: $blanco;
+                    text-decoration: none;
+                    list-style: none;
+                }
+
+                ul {
+                    position: absolute;
+                    display: none;
+
+                    li {
+                        display: block;
+                    }
+                }
+
+                &:hover ul {
+                    display: block;
+                    background-color: $turquesa;
+                    border: solid;
+                }
+            }
+        }
+    }
+}
+
+// Aqui van las Medias Queries
+//Medias Queries Tablet
+@media (min-width: 768px) {
+    .nav__links {
+        li {
+            font-size: 1.5rem;
+        }
+    }
+}
+
+// Media Queries Desktop
+@media (min-width: 1440px) {
+    .header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        .logo {
+            width: 150px;
+            height: 100px;
+            margin: 0.5rem 2.5rem;
+            border-radius: 500px;
+        }
+
+        .nav__links {
+            display: flex;
+            align-items: center;
+            margin: 0.5rem 12rem;
+
+            li {
+                display: inline-block;
+                position: relative;
+                margin: 1.5rem;
+                font-size: 1.5rem;
+                font-weight: 600;
+                a{
+                    font-size: 1.3rem;
+                    padding: 1rem;
+                }
+            }
+        }
+    }
+}

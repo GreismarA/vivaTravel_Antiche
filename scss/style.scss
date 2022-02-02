@@ -1,0 +1,21 @@
+// Aqui van las Variables
+@import './utilities/variables';
+@import './utilities/extend';
+@import './utilities/mixins';
+@import './utilities/maps';
+
+
+// Importaciones/ Particiones
+@import './base/reset';
+
+//Layout
+@import './layout/body';
+@import './layout/header';
+@import './layout/footer';
+
+//Secciones
+@import './secciones/index';
+@import './secciones/quienessomos';
+@import './secciones/destinos';
+@import './secciones/contactanos';
+@import './secciones/paquetes';

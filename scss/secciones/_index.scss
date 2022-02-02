@@ -1,0 +1,259 @@
+/* Seccion Home */
+/* aplicando Grid */
+.grilla1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+        "header"
+        "contenido"
+        "footer";
+    width: 100%;
+    height: 100vh;
+    .header {
+        grid-area: header;
+    }
+    
+    .contenido {
+        grid-area: contenido;
+        height: 60vh;
+    }
+    
+    .footer {
+        grid-area: footer;
+    }
+}
+
+
+//Main
+main {
+    video {
+        width: 100vw;
+    }
+
+    div {
+        p {
+            width: 94vw;
+            font-size: 1rem;
+            text-align: center;
+            margin: 0.5rem 0.6rem;
+            word-spacing: 0.1rem;
+        }
+
+        //seccion
+        section {
+            .container {
+                display: flex;
+                flex-direction: column;
+                margin: 2rem 0.1rem;
+                align-items: center;
+                width: 99vw;
+
+                div {
+                    flex-direction: column;
+
+                    h4 {
+                        text-align: center;
+                        color: $azul-oscuro;
+                        font-size: 1.1rem;
+                        font-style: italic;
+                        font-weight: 600;
+                        margin: 0.1rem 0.2rem;
+                    }
+
+                    h3 {
+                        text-align: center;
+                        margin: 0.1rem 0.1rem;
+                        padding: 0.1rem;
+                        word-spacing: 0.4rem;
+                        font-size: 1.5rem;
+                        color: $azul-oscuro;
+                    }
+
+                    p {
+                        text-align: center;
+                        margin: 0.5rem 0.4rem;
+                        padding: 0.2rem;
+                        word-spacing: 0.2rem;
+                        line-height: 1.3rem;
+                    }
+                }
+
+                img {
+                    width: 300px;
+                    height: 200px;
+                    margin: 0.1rem 0.1rem;
+                    padding: 0.1rem;
+                    box-shadow: 8px 11px 5px -4px rgba(134, 134, 140, 0.49);
+                    -webkit-box-shadow: 8px 11px 5px -4px rgba(134, 134, 140, 0.49);
+                    -moz-box-shadow: 8px 11px 5px -4px rgba(134, 134, 140, 0.49);
+                }
+            }
+
+            .containerReverse {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin: 2rem 0.1rem;
+                width: 99vw;
+
+                div {
+                    flex-direction: column;
+
+                    h4 {
+                        text-align: center;
+                        color: $azul-oscuro;
+                        font-size: 1.1rem;
+                        font-style: italic;
+                        font-weight: 600;
+                        margin: 0.1rem 0.2rem;
+                    }
+
+                    h3 {
+                        text-align: center;
+                        margin: 0.1rem 0.1rem;
+                        padding: 0.1rem;
+                        word-spacing: 0.4rem;
+                        font-size: 1.5rem;
+                        color: $azul-oscuro;
+                    }
+
+                    p {
+                        text-align: center;
+                        margin: 0.5rem 0.4rem;
+                        padding: 0.2rem;
+                        word-spacing: 0.2rem;
+                        line-height: 1.3rem;
+                    }
+                }
+
+                img {
+                    width: 300px;
+                    height: 200px;
+                    margin: 0.1rem 0.1rem;
+                    padding: 0.1rem;
+                    box-shadow: 8px 11px 5px -4px rgba(134, 134, 140, 0.49);
+                    -webkit-box-shadow: 8px 11px 5px -4px rgba(134, 134, 140, 0.49);
+                    -moz-box-shadow: 8px 11px 5px -4px rgba(134, 134, 140, 0.49);
+                }
+            }
+        }
+    }
+}
+
+//Aqui van las medias queries
+//Medias queries de Tablet
+@media (min-width: 768px) {}
+
+//Medias queries Desktop
+@media (min-width: 1440px) {
+    main {
+        width: 99vw;
+        margin: 0;
+
+        div {
+            .parrafo__inicial {
+                width: 85%;
+                font-size: 1.2rem;
+                text-align: center;
+                margin: 1.5rem auto;
+                word-spacing: 0.2rem;
+            }
+
+            section {
+                .container {
+                    display: flex;
+                    flex-direction: row;
+                    width: 92vw;
+                    margin: 3rem;
+                    align-items: center;
+
+                    div {
+                        flex-direction: column;
+                        margin-left: 5rem;
+
+                        h4 {
+                            text-align: left;
+                            font-size: 1.2rem;
+                            font-style: italic;
+                            font-weight: 600;
+                            margin: 0.2rem 0.5rem 0.2rem 4rem;
+                        }
+
+                        h3 {
+                            text-align: left;
+                            margin: 0.2rem 0.5rem 0.1rem 4rem;
+                            padding: 0.1rem;
+                            word-spacing: 0.5rem;
+                            font-size: 2rem;
+                        }
+
+                        p {
+                            text-align: justify;
+                            width: 60%;
+                            margin: 3rem 0.5rem 3rem 4rem;
+                            padding: 0.2rem;
+                            text-align: justify;
+                            word-spacing: 0.3rem;
+                            line-height: 2.5rem;
+                        }
+                    }
+
+                    img {
+                        width: 900px;
+                        height: 400px;
+                        margin: 2rem 4rem 2rem 0.5rem;
+                        padding: 0.1rem;
+                    }
+                }
+
+                .containerReverse {
+                    display: flex;
+                    flex-direction: row-reverse;
+                    width: 90vw;
+                    margin: 3rem 0.5rem 3rem 3rem;
+                    align-items: center;
+
+                    div {
+                        flex-direction: column;
+                        margin-right: 5rem;
+
+                        h4 {
+                            text-align: left;
+                            font-size: 1.2rem;
+                            font-style: italic;
+                            font-weight: 600;
+                            margin: 0.2rem 4rem 0.2rem 14rem;
+                        }
+
+                        h3 {
+                            text-align: left;
+                            margin: 0.2rem 4rem 0.1rem 14rem;
+                            padding: 0.1rem;
+                            word-spacing: 0.5rem;
+                            font-size: 2rem;
+                        }
+
+                        p {
+                            text-align: justify;
+                            width: 60%;
+                            margin: 3rem 4rem 3rem 14rem;
+                            padding: 0.2rem;
+                            text-align: justify;
+                            word-spacing: 0.3rem;
+                            line-height: 2.5rem;
+                        }
+                    }
+
+                    img {
+                        width: 900px;
+                        height: 400px;
+                        margin: 2rem 8rem 2rem 5rem;
+                        padding: 0.1rem;
+                    }
+                }
+            }
+        }
+    }
+}

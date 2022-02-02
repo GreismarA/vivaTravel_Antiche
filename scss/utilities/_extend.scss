@@ -1,0 +1,27 @@
+// aqui los llamo con % y los aplico con @exten %...
+//Extends
+%divFooter {
+    margin: 1rem 0rem;
+    width: 100%;
+    text-align: center;
+    border-bottom: solid #ffff 1px;
+}
+
+%inputFooter {
+    background-color: $turquesa;
+    color: $blanco;
+    font-family: 'Poppins', sans-serif;
+}
+
+//Extends Contacto
+%inputContacto {
+    width: 75%;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    background-color: $azul-oscuro;
+    border: none;
+    border-bottom: solid 1px $turquesa;
+    color: $blanco;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+}

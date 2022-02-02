@@ -1,0 +1,12 @@
+//MAPS + each
+$font-size: (
+    containerh4: 1.2rem,
+    container__subtitle: 2rem,
+    containerReverse__subtitle: 2rem,
+);
+
+@each $clases, $tamanio in $font-size {
+    .#{$clases}{
+        font-size: $tamanio;
+    }
+}

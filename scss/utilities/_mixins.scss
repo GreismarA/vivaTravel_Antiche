@@ -1,0 +1,7 @@
+// aqui se comienza con @ y se aplica con @include ... ();
+@mixin titulos3 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color: $azul-oscuro;
+}

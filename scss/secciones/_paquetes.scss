@@ -1,0 +1,120 @@
+//PAQUETES
+.grilla5 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+        "header"
+        "contenido5"
+        "footer";
+    width: 100%;
+    height: 100vh;
+
+    .header {
+        grid-area: header;
+    }
+
+    .contenido5 {
+        grid-area: contenido5;
+        height: 60vh;
+    }
+
+    .footer {
+        grid-area: footer;
+        margin-top: 540vh;
+    }
+}
+
+//Main
+.grilla5 {
+    main {
+        section {
+            h1 {
+                margin: 3rem;
+                color: $azul-oscuro;
+                font-weight: 600;
+                text-align: center;
+            }
+
+            div {
+                h4 {
+                    font-style: italic;
+                    color: $azul-oscuro;
+                    text-align: center;
+                    font-weight: 400;
+                }
+
+                .subtitulo__plan {
+                    font-weight: 600;
+                }
+
+                .parrafo__paquetes {
+                    font-size: 0.8rem;
+                    text-align: center;
+                    margin-bottom: 3rem;
+                }
+            }
+        }
+    }
+}
+
+//Aqui van las medias Queries
+//Medias Tablet
+@media (min-width: 768px) {
+    .grilla5 {
+        main {
+            section {
+                h1 {
+                    font-size: 3rem;
+                }
+
+                div {
+                    display: flex;
+                    flex-direction: column;
+                    justify-items: center;
+
+                    div {
+                        h4 {
+                            font-weight: 600;
+                        }
+
+                        .subtitulo__plan {
+                            text-align: center;
+                        }
+
+                        .parrafo__paquetes {
+                            font-size: 1rem;
+                            line-height: 2rem;
+                            word-spacing: 0.5rem;
+                            padding: 1rem 2rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//Medias Desktop
+@media (min-width: 1440px) {
+    .grilla5 {
+        main {
+            section {
+                div {
+                    div {
+                        margin-top: 3rem;
+
+                        .parrafo__paquetes {
+                            padding: 1rem 4rem;
+                        }
+                    }
+
+                    img {
+                        margin: 1rem 10rem;
+                    }
+                }
+            }
+        }
+    }
+}
