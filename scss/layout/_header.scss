@@ -7,17 +7,27 @@
     align-items: center;
     width: 100vw;
 
-    .logo {
-        width: 80px;
-        height: 45px;
-        margin: 0.5rem 2.5rem;
-        border-radius: 500px;
+    a {
+        display: flex;
+        justify-content: center;
+
+        .logo {
+            width: 80px;
+            height: 45px;
+            margin: 0.5rem 2.5rem;
+            border-radius: 500px;
+        }
     }
 
     nav {
+        width: 100vw;
+        padding: 0;
+
         .nav__links {
             display: flex;
+            justify-content: center;
             align-items: center;
+            padding: 0;
 
             li {
                 display: inline-block;
@@ -52,45 +62,46 @@
     }
 }
 
-// Aqui van las Medias Queries
-//Medias Queries Tablet
-@media (min-width: 768px) {
-    .nav__links {
-        li {
-            font-size: 1.5rem;
+//Aqui van las Medias Queries
+//Media Tablet
+@media (min-width: 768px) and (max-width: 1024px) {
+    .header {
+        padding: 0;
+        width: 100vw;
+
+        div {
+            width: 100vw;
+
+            a {
+                padding: 0;
+            }
         }
     }
 }
 
-// Media Queries Desktop
-@media (min-width: 1440px) {
+//Media Desktop
+@media (min-width: 1025px) and (max-width: 1900px) {
     .header {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
+        div {
+            a {
+                .logo {
+                    width: 180px;
+                    height: 85px;
+                }
+            }
 
-        .logo {
-            width: 150px;
-            height: 100px;
-            margin: 0.5rem 2.5rem;
-            border-radius: 500px;
-        }
-
-        .nav__links {
-            display: flex;
-            align-items: center;
-            margin: 0.5rem 12rem;
-
-            li {
-                display: inline-block;
-                position: relative;
-                margin: 1.5rem;
-                font-size: 1.5rem;
-                font-weight: 600;
-                a{
-                    font-size: 1.3rem;
-                    padding: 1rem;
+            nav {
+                ul {
+                    li {
+                        a {
+                            font-size: 1.2rem;
+                            margin: 2rem 1rem;
+                        }
+                        &:hover{
+                            background-color: $azul;
+                            border-radius: 10px;
+                        }
+                    }
                 }
             }
         }

@@ -1,32 +1,4 @@
 //DESTINOS
-.grilla3 {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    gap: 0px 0px;
-    grid-template-areas:
-        "header"
-        "contenido3"
-        "footer";
-    width: 100%;
-    height: 100vh;
-
-    .header {
-        grid-area: header;
-    }
-
-    .contenido3 {
-        grid-area: contenido3;
-        width: 99vw;
-        margin-top: 2rem;
-    }
-
-    .footer {
-        grid-area: footer;
-        margin-top: 20vh;
-    }
-}
-
 //Main
 .grilla3 {
     main {
@@ -104,7 +76,7 @@
 
 //Aqui van las Medias Queries
 //Medias Tablet 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1024px) {
     .grilla3 {
         main {
             section {
@@ -137,17 +109,24 @@
 }
 
 //Media Desktop
-@media (min-width: 1440px) {
+@media (min-width: 1025px) and (max-width: 1900px) {
     .grilla3 {
         main {
             section {
                 div {
                     @include titulos3 ();
+                    h1{
+                        background-color: $azul;
+                        font-weight: 600;
+                        padding: 2rem 0;
+                    }
                 }
 
                 .destinos {
                     div {
-                        div {
+                        .third__text {
+                            display: flex;
+                            flex-direction: column;
                             h3 {
                                 @include titulos3 ();
                             }
@@ -156,7 +135,8 @@
                                 text-align: center;
                                 font-size: 1.2rem;
                                 word-spacing: 0.2rem;
-                                line-height: 2rem;
+                                line-height: 2.3rem;
+                                padding: 1rem 10rem;
                             }
                         }
 
@@ -167,7 +147,11 @@
                     }
 
                     .experiencia {
+                        display: flex;
+                        flex-direction: row;
                         div {
+                            display: flex;
+                            flex-direction: column;
                             h4 {
                                 text-align: center;
                                 font-size: 2rem;
@@ -177,10 +161,11 @@
 
                             p {
                                 text-align: center;
-                                font-size: 1.2rem;
+                                font-size: 1rem;
                                 word-spacing: 0.2rem;
                                 line-height: 2rem;
-                                margin: 1rem;
+                                margin: 1.5rem;
+                                width: 50vw;
                             }
                         }
 

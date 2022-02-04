@@ -1,10 +1,10 @@
-.footer div, .footer .container__footer--active {
+.footer div, .footer .contenedor__footer--active {
   margin: 1rem 0rem;
   width: 100%;
   text-align: center;
   border-bottom: solid #ffff 1px; }
 
-.footer .container__footer--active form .input__suscrib, .footer .container__footer--active form .input__enviar {
+.footer .contenedor__footer--active form .input__suscrib, .footer .contenedor__footer--active form .input__enviar {
   background-color: #00909E;
   color: #ffff;
   font-family: 'Poppins', sans-serif; }
@@ -37,6 +37,9 @@
 body {
   font-family: 'Poppins', sans-serif; }
 
+.row {
+  padding: 0; }
+
 .header {
   background-color: #00909E;
   display: flex;
@@ -44,67 +47,66 @@ body {
   justify-content: flex-start;
   align-items: center;
   width: 100vw; }
-  .header .logo {
-    width: 80px;
-    height: 45px;
-    margin: 0.5rem 2.5rem;
-    border-radius: 500px; }
-  .header nav .nav__links {
+  .header a {
     display: flex;
-    align-items: center; }
-    .header nav .nav__links li {
-      display: inline-block;
-      position: relative;
-      margin: 0.2rem;
-      font-size: 0.8rem;
-      font-weight: 300;
-      padding: 0.1rem; }
-      .header nav .nav__links li a {
-        color: #ffff;
-        text-decoration: none;
-        list-style: none; }
-      .header nav .nav__links li ul {
-        position: absolute;
-        display: none; }
-        .header nav .nav__links li ul li {
-          display: block; }
-      .header nav .nav__links li:hover ul {
-        display: block;
-        background-color: #00909E;
-        border: solid; }
-
-@media (min-width: 768px) {
-  .nav__links li {
-    font-size: 1.5rem; } }
-
-@media (min-width: 1440px) {
-  .header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center; }
-    .header .logo {
-      width: 150px;
-      height: 100px;
+    justify-content: center; }
+    .header a .logo {
+      width: 80px;
+      height: 45px;
       margin: 0.5rem 2.5rem;
       border-radius: 500px; }
-    .header .nav__links {
+  .header nav {
+    width: 100vw;
+    padding: 0; }
+    .header nav .nav__links {
       display: flex;
+      justify-content: center;
       align-items: center;
-      margin: 0.5rem 12rem; }
-      .header .nav__links li {
+      padding: 0; }
+      .header nav .nav__links li {
         display: inline-block;
         position: relative;
-        margin: 1.5rem;
-        font-size: 1.5rem;
-        font-weight: 600; }
-        .header .nav__links li a {
-          font-size: 1.3rem;
-          padding: 1rem; } }
+        margin: 0.2rem;
+        font-size: 0.8rem;
+        font-weight: 300;
+        padding: 0.1rem; }
+        .header nav .nav__links li a {
+          color: #ffff;
+          text-decoration: none;
+          list-style: none; }
+        .header nav .nav__links li ul {
+          position: absolute;
+          display: none; }
+          .header nav .nav__links li ul li {
+            display: block; }
+        .header nav .nav__links li:hover ul {
+          display: block;
+          background-color: #00909E;
+          border: solid; }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .header {
+    padding: 0;
+    width: 100vw; }
+    .header div {
+      width: 100vw; }
+      .header div a {
+        padding: 0; } }
+
+@media (min-width: 1025px) and (max-width: 1900px) {
+  .header div a .logo {
+    width: 180px;
+    height: 85px; }
+  .header div nav ul li a {
+    font-size: 1.2rem;
+    margin: 2rem 1rem; }
+  .header div nav ul li:hover {
+    background-color: #27496D;
+    border-radius: 10px; } }
 
 .footer {
   background-color: #00909E;
-  margin-top: 115rem;
+  margin-top: 10rem;
   width: 100vw;
   padding: 1rem 0rem 2rem 0rem; }
   .footer div h3 {
@@ -113,6 +115,8 @@ body {
     color: #ffff;
     font-size: 1.3rem;
     font-family: serif; }
+    .footer div h3:hover {
+      color: #142850; }
   .footer div ul {
     list-style: none;
     color: #ffff;
@@ -132,312 +136,245 @@ body {
     display: block; }
   .footer div:hover p {
     display: block; }
-  .footer .container__footer--active form {
+  .footer .contenedor__footer--active form {
     display: none; }
-    .footer .container__footer--active form .input__suscrib {
+    .footer .contenedor__footer--active form .input__suscrib {
       margin: 0.5rem 0rem 0.5rem 3rem;
       width: 50%;
       border: none;
       border-bottom: solid 1.5px #142850;
       outline: none; }
-      .footer .container__footer--active form .input__suscrib ::placeholder {
+      .footer .contenedor__footer--active form .input__suscrib ::placeholder {
         color: #ffff; }
-    .footer .container__footer--active form .input__enviar {
+    .footer .contenedor__footer--active form .input__enviar {
       border-radius: 0.3rem;
       font-weight: 200;
       margin: 1rem;
       border: #142850 2px;
       width: 5rem;
       height: 2rem; }
-      .footer .container__footer--active form .input__enviar:hover {
+      .footer .contenedor__footer--active form .input__enviar:hover {
         background-color: #27496D; }
-  .footer .container__footer--active .fab {
+  .footer .contenedor__footer--active .fab {
     color: #ffff;
     font-size: 1.5rem;
     margin: 0.5rem;
     display: none; }
-  .footer .container__footer--active:hover form {
+  .footer .contenedor__footer--active:hover form {
     display: block; }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (mas-width: 1024px) {
   .footer {
-    margin-top: 220vh; } }
+    width: 100vw; } }
 
-@media (min-width: 1440px) {
-  .footer {
-    width: 100vw;
-    background-color: #00909E;
+@media (min-width: 1025px) and (max-width: 1900px) {
+  .footer div:hover iframe {
+    display: flex;
+    width: 400px;
+    margin: 1rem auto; } }
+
+.grilla1 main {
+  width: 100%; }
+  .grilla1 main video {
+    width: 100vw; }
+  .grilla1 main div div p {
+    width: 94vw;
+    font-size: 1rem;
+    text-align: center;
+    margin: 0.5rem 0.6rem;
+    word-spacing: 0.1rem;
+    transition: 2s; }
+  .grilla1 main div section {
+    padding: 0; }
+    .grilla1 main div section .contenedor {
+      display: flex;
+      flex-direction: column;
+      margin: 2rem 0.1rem;
+      align-items: center;
+      width: 90vw; }
+      .grilla1 main div section .contenedor div {
+        flex-direction: column;
+        width: 90vw; }
+        .grilla1 main div section .contenedor div h4 {
+          text-align: center;
+          color: #142850;
+          font-size: 1.1rem;
+          font-style: italic;
+          font-weight: 600;
+          margin: 0.1rem 0.2rem;
+          width: 90vw;
+          transition: 2s; }
+        .grilla1 main div section .contenedor div h3 {
+          text-align: center;
+          margin: 0.1rem 0.1rem;
+          padding: 0.1rem;
+          word-spacing: 0.4rem;
+          font-size: 1.5rem;
+          color: #142850;
+          width: 90vw;
+          transition: 2s; }
+        .grilla1 main div section .contenedor div p {
+          text-align: center;
+          margin: 0.5rem 0.4rem;
+          padding: 0.2rem;
+          word-spacing: 0.2rem;
+          line-height: 1.3rem;
+          width: 90vw;
+          transition: 2s; }
+      .grilla1 main div section .contenedor img {
+        width: 300px;
+        height: 200px;
+        margin: 0.1rem 0.1rem;
+        padding: 0.1rem;
+        box-shadow: 8px 11px 5px -4px rgba(134, 134, 140, 0.49);
+        -webkit-box-shadow: 8px 11px 5px -4px rgba(134, 134, 140, 0.49);
+        -moz-box-shadow: 8px 11px 5px -4px rgba(134, 134, 140, 0.49);
+        transition: 2s; }
+    .grilla1 main div section .contenedorReverse {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 2rem 0.1rem;
+      width: 90vw; }
+      .grilla1 main div section .contenedorReverse div {
+        flex-direction: column;
+        width: 90vw; }
+        .grilla1 main div section .contenedorReverse div h4 {
+          text-align: center;
+          color: #142850;
+          font-size: 1.1rem;
+          font-style: italic;
+          font-weight: 600;
+          margin: 0.1rem 0.2rem;
+          width: 90vw;
+          transition: 2s; }
+        .grilla1 main div section .contenedorReverse div h3 {
+          text-align: center;
+          margin: 0.1rem 0.1rem;
+          padding: 0.1rem;
+          word-spacing: 0.4rem;
+          font-size: 1.5rem;
+          color: #142850;
+          width: 90vw;
+          transition: 2s; }
+        .grilla1 main div section .contenedorReverse div p {
+          text-align: center;
+          margin: 0.5rem 0.4rem;
+          padding: 0.2rem;
+          word-spacing: 0.2rem;
+          line-height: 1.3rem;
+          width: 90vw;
+          transition: 2s; }
+      .grilla1 main div section .contenedorReverse img {
+        width: 300px;
+        height: 200px;
+        margin: 0.1rem 0.1rem;
+        padding: 0.1rem;
+        box-shadow: 8px 11px 5px -4px rgba(134, 134, 140, 0.49);
+        -webkit-box-shadow: 8px 11px 5px -4px rgba(134, 134, 140, 0.49);
+        -moz-box-shadow: 8px 11px 5px -4px rgba(134, 134, 140, 0.49);
+        transition: 2s; }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .grilla1 main div div p {
+    line-height: 2.5rem;
+    padding: 1rem 2rem; }
+  .grilla1 main div section .contenedor {
+    margin: 2rem; }
+    .grilla1 main div section .contenedor div p {
+      line-height: 2rem; }
+    .grilla1 main div section .contenedor img {
+      margin-top: 2rem; }
+  .grilla1 main div section .contenedorReverse {
+    margin: 2rem; }
+    .grilla1 main div section .contenedorReverse div p {
+      line-height: 2rem; }
+    .grilla1 main div section .contenedorReverse img {
+      margin-top: 2rem; } }
+
+@media (min-width: 1025px) and (max-width: 1900px) {
+  .grilla1 main div div p {
+    line-height: 3rem;
+    padding: 4rem; }
+  .grilla1 main div section .contenedor {
     display: flex;
     flex-direction: row;
-    margin-top: 350vh;
-    align-items: stretch;
-    justify-content: space-between; }
-    .footer div {
-      margin: 2rem;
-      padding: 0.5rem 4rem;
-      border-bottom: none;
-      text-align: left; }
-      .footer div h3 {
-        width: 60%;
-        font-weight: 600;
-        margin: 0.5rem;
-        letter-spacing: 0.1rem; }
-      .footer div ul {
-        margin: 0.5rem;
-        display: block; }
-      .footer div p {
-        margin-left: 0.5rem;
-        display: block; }
-      .footer div iframe {
-        margin: 1.5rem 0.5rem;
-        display: block; }
-    .footer .container__footer--active {
-      margin: 2rem;
-      padding: 0.5rem 4rem 0.5rem 8rem;
-      border-bottom: none;
-      text-align: left; }
-      .footer .container__footer--active form {
-        display: flex; }
-        .footer .container__footer--active form .input__suscrib {
-          margin: 0.5rem;
-          width: 11vw; }
-        .footer .container__footer--active form .input__enviar {
-          margin: 1rem 2rem; }
-      .footer .container__footer--active .fab {
-        font-size: 2rem; } }
+    justify-content: space-around;
+    padding: 4rem 1rem; }
+    .grilla1 main div section .contenedor div {
+      width: 50vw;
+      margin-top: 2rem; }
+      .grilla1 main div section .contenedor div h4 {
+        width: 50vw;
+        font-size: 1.5rem;
+        margin-bottom: 1rem; }
+      .grilla1 main div section .contenedor div h3 {
+        width: 50vw;
+        font-size: 1.5rem; }
+      .grilla1 main div section .contenedor div p {
+        width: 50vw;
+        line-height: 2rem; }
+    .grilla1 main div section .contenedor img {
+      width: 400px;
+      height: 300px; }
+  .grilla1 main div section .contenedorReverse {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    padding: 4rem 1rem; }
+    .grilla1 main div section .contenedorReverse div {
+      width: 50vw;
+      margin-top: 2rem; }
+      .grilla1 main div section .contenedorReverse div h4 {
+        width: 50vw;
+        font-size: 1.5rem;
+        margin-bottom: 1rem; }
+      .grilla1 main div section .contenedorReverse div h3 {
+        width: 50vw;
+        font-size: 1.5rem; }
+      .grilla1 main div section .contenedorReverse div p {
+        width: 50vw;
+        line-height: 2rem; }
+    .grilla1 main div section .contenedorReverse img {
+      width: 400px;
+      height: 300px; } }
 
-/* Seccion Home */
-/* aplicando Grid */
-.grilla1 {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  gap: 0px 0px;
-  grid-template-areas: "header" "contenido" "footer";
-  width: 100%;
-  height: 100vh; }
-  .grilla1 .header {
-    grid-area: header; }
-  .grilla1 .contenido {
-    grid-area: contenido;
-    height: 60vh; }
-  .grilla1 .footer {
-    grid-area: footer; }
-
-main video {
-  width: 100vw; }
-
-main div p {
-  width: 94vw;
-  font-size: 1rem;
-  text-align: center;
-  margin: 0.5rem 0.6rem;
-  word-spacing: 0.1rem; }
-
-main div section .container {
-  display: flex;
-  flex-direction: column;
-  margin: 2rem 0.1rem;
-  align-items: center;
-  width: 99vw; }
-  main div section .container div {
-    flex-direction: column; }
-    main div section .container div h4 {
-      text-align: center;
-      color: #142850;
-      font-size: 1.1rem;
-      font-style: italic;
-      font-weight: 600;
-      margin: 0.1rem 0.2rem; }
-    main div section .container div h3 {
-      text-align: center;
-      margin: 0.1rem 0.1rem;
-      padding: 0.1rem;
-      word-spacing: 0.4rem;
-      font-size: 1.5rem;
-      color: #142850; }
-    main div section .container div p {
-      text-align: center;
-      margin: 0.5rem 0.4rem;
-      padding: 0.2rem;
-      word-spacing: 0.2rem;
-      line-height: 1.3rem; }
-  main div section .container img {
-    width: 300px;
-    height: 200px;
-    margin: 0.1rem 0.1rem;
-    padding: 0.1rem;
-    box-shadow: 8px 11px 5px -4px rgba(134, 134, 140, 0.49);
-    -webkit-box-shadow: 8px 11px 5px -4px rgba(134, 134, 140, 0.49);
-    -moz-box-shadow: 8px 11px 5px -4px rgba(134, 134, 140, 0.49); }
-
-main div section .containerReverse {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 2rem 0.1rem;
-  width: 99vw; }
-  main div section .containerReverse div {
-    flex-direction: column; }
-    main div section .containerReverse div h4 {
-      text-align: center;
-      color: #142850;
-      font-size: 1.1rem;
-      font-style: italic;
-      font-weight: 600;
-      margin: 0.1rem 0.2rem; }
-    main div section .containerReverse div h3 {
-      text-align: center;
-      margin: 0.1rem 0.1rem;
-      padding: 0.1rem;
-      word-spacing: 0.4rem;
-      font-size: 1.5rem;
-      color: #142850; }
-    main div section .containerReverse div p {
-      text-align: center;
-      margin: 0.5rem 0.4rem;
-      padding: 0.2rem;
-      word-spacing: 0.2rem;
-      line-height: 1.3rem; }
-  main div section .containerReverse img {
-    width: 300px;
-    height: 200px;
-    margin: 0.1rem 0.1rem;
-    padding: 0.1rem;
-    box-shadow: 8px 11px 5px -4px rgba(134, 134, 140, 0.49);
-    -webkit-box-shadow: 8px 11px 5px -4px rgba(134, 134, 140, 0.49);
-    -moz-box-shadow: 8px 11px 5px -4px rgba(134, 134, 140, 0.49); }
-
-@media (min-width: 1440px) {
-  main {
-    width: 99vw;
-    margin: 0; }
-    main div .parrafo__inicial {
-      width: 85%;
-      font-size: 1.2rem;
-      text-align: center;
-      margin: 1.5rem auto;
-      word-spacing: 0.2rem; }
-    main div section .container {
-      display: flex;
-      flex-direction: row;
-      width: 92vw;
-      margin: 3rem;
-      align-items: center; }
-      main div section .container div {
-        flex-direction: column;
-        margin-left: 5rem; }
-        main div section .container div h4 {
-          text-align: left;
-          font-size: 1.2rem;
-          font-style: italic;
-          font-weight: 600;
-          margin: 0.2rem 0.5rem 0.2rem 4rem; }
-        main div section .container div h3 {
-          text-align: left;
-          margin: 0.2rem 0.5rem 0.1rem 4rem;
-          padding: 0.1rem;
-          word-spacing: 0.5rem;
-          font-size: 2rem; }
-        main div section .container div p {
-          text-align: justify;
-          width: 60%;
-          margin: 3rem 0.5rem 3rem 4rem;
-          padding: 0.2rem;
-          text-align: justify;
-          word-spacing: 0.3rem;
-          line-height: 2.5rem; }
-      main div section .container img {
-        width: 900px;
-        height: 400px;
-        margin: 2rem 4rem 2rem 0.5rem;
-        padding: 0.1rem; }
-    main div section .containerReverse {
-      display: flex;
-      flex-direction: row-reverse;
-      width: 90vw;
-      margin: 3rem 0.5rem 3rem 3rem;
-      align-items: center; }
-      main div section .containerReverse div {
-        flex-direction: column;
-        margin-right: 5rem; }
-        main div section .containerReverse div h4 {
-          text-align: left;
-          font-size: 1.2rem;
-          font-style: italic;
-          font-weight: 600;
-          margin: 0.2rem 4rem 0.2rem 14rem; }
-        main div section .containerReverse div h3 {
-          text-align: left;
-          margin: 0.2rem 4rem 0.1rem 14rem;
-          padding: 0.1rem;
-          word-spacing: 0.5rem;
-          font-size: 2rem; }
-        main div section .containerReverse div p {
-          text-align: justify;
-          width: 60%;
-          margin: 3rem 4rem 3rem 14rem;
-          padding: 0.2rem;
-          text-align: justify;
-          word-spacing: 0.3rem;
-          line-height: 2.5rem; }
-      main div section .containerReverse img {
-        width: 900px;
-        height: 400px;
-        margin: 2rem 8rem 2rem 5rem;
-        padding: 0.1rem; } }
-
-.grilla2 {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  gap: 0px 0px;
-  grid-template-areas: "header" "contenido2" "footer";
-  width: 100%;
-  height: 100vh; }
-  .grilla2 .header {
-    grid-area: header; }
-  .grilla2 .contenido2 {
-    grid-area: contenido2;
-    height: 60vh; }
-  .grilla2 .footer {
-    grid-area: footer;
-    margin-top: 140vh; }
-
-main section div {
+.grilla2 main section div {
   display: flex;
   flex-direction: column;
   margin: 1rem 0.1rem;
   width: 99vw; }
-  main section div div {
+  .grilla2 main section div div {
     flex-direction: column;
     margin: 0.2rem; }
-    main section div div h1 {
+    .grilla2 main section div div h1 {
       text-align: center;
       margin-bottom: 1.5rem; }
-    main section div div p {
+    .grilla2 main section div div p {
       text-align: center;
-      word-spacing: 0.2rem; }
-  main section div img {
+      word-spacing: 0.2rem;
+      font-size: 0.8rem;
+      padding: 1rem 2rem; }
+  .grilla2 main section div img {
     width: 300px;
     height: 415px;
     margin: 3rem 3rem; }
 
-@media (min-width: 768px) {
-  main section div {
+@media (min-width: 768px) and (max-width: 1024px) {
+  .grilla2 main section div {
     margin: 1.5rem 0.1rem; }
-    main section div div {
+    .grilla2 main section div div {
       margin: 0.2rem 0rem; }
-      main section div div p {
+      .grilla2 main section div div p {
         width: 80vw;
         margin: 0rem auto;
         line-height: 2rem; }
-    main section div img {
+    .grilla2 main section div img {
       width: 500px;
       height: 470px;
       margin: 3rem 8.8rem; } }
 
-@media (min-width: 1440px) {
+@media (min-width: 1025px) and (max-width: 1900px) {
   .grilla2 main section div {
     display: flex;
     flex-direction: row;
@@ -459,27 +396,7 @@ main section div {
       width: 700px;
       margin-top: 3rem;
       margin-left: 2.5rem;
-      margin-right: 4rem; }
-  footer {
-    margin-top: 80vh; } }
-
-.grilla3 {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  gap: 0px 0px;
-  grid-template-areas: "header" "contenido3" "footer";
-  width: 100%;
-  height: 100vh; }
-  .grilla3 .header {
-    grid-area: header; }
-  .grilla3 .contenido3 {
-    grid-area: contenido3;
-    width: 99vw;
-    margin-top: 2rem; }
-  .grilla3 .footer {
-    grid-area: footer;
-    margin-top: 20vh; }
+      margin-right: 4rem; } }
 
 .grilla3 main section div {
   text-align: center;
@@ -526,7 +443,7 @@ main section div {
     height: 230px;
     margin: 2rem; }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   .grilla3 main section .destinos div div {
     margin: 1rem 2rem; }
   .grilla3 main section .destinos div img {
@@ -538,54 +455,54 @@ main section div {
     width: 400px;
     height: 310px; } }
 
-@media (min-width: 1440px) {
+@media (min-width: 1025px) and (max-width: 1900px) {
   .grilla3 main section div {
     text-align: center;
     margin-bottom: 2rem;
     font-size: 2rem;
     color: #142850; }
-  .grilla3 main section .destinos div div h3 {
-    text-align: center;
-    margin-bottom: 2rem;
-    font-size: 2rem;
-    color: #142850; }
-  .grilla3 main section .destinos div div p {
-    text-align: center;
-    font-size: 1.2rem;
-    word-spacing: 0.2rem;
-    line-height: 2rem; }
+    .grilla3 main section div h1 {
+      background-color: #27496D;
+      font-weight: 600;
+      padding: 2rem 0; }
+  .grilla3 main section .destinos div .third__text {
+    display: flex;
+    flex-direction: column; }
+    .grilla3 main section .destinos div .third__text h3 {
+      text-align: center;
+      margin-bottom: 2rem;
+      font-size: 2rem;
+      color: #142850; }
+    .grilla3 main section .destinos div .third__text p {
+      text-align: center;
+      font-size: 1.2rem;
+      word-spacing: 0.2rem;
+      line-height: 2.3rem;
+      padding: 1rem 10rem; }
   .grilla3 main section .destinos div img {
     width: 950px;
     height: 520px; }
-  .grilla3 main section .destinos .experiencia div h4 {
-    text-align: center;
-    font-size: 2rem;
-    font-style: italic;
-    margin: 1rem 1rem 2rem 1rem; }
-  .grilla3 main section .destinos .experiencia div p {
-    text-align: center;
-    font-size: 1.2rem;
-    word-spacing: 0.2rem;
-    line-height: 2rem;
-    margin: 1rem; }
-  .grilla3 main section .destinos .experiencia img {
-    width: 530px;
-    height: 400px; } }
-
-.grilla4 {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  gap: 0px 0px;
-  grid-template-areas: "header" "contenido4" "footer";
-  width: 100%;
-  height: 100vh; }
-  .grilla4 .header {
-    grid-area: header; }
-  .grilla4 .contenido4 {
-    grid-area: contenido4; }
-  .grilla4 .footer {
-    grid-area: footer; }
+  .grilla3 main section .destinos .experiencia {
+    display: flex;
+    flex-direction: row; }
+    .grilla3 main section .destinos .experiencia div {
+      display: flex;
+      flex-direction: column; }
+      .grilla3 main section .destinos .experiencia div h4 {
+        text-align: center;
+        font-size: 2rem;
+        font-style: italic;
+        margin: 1rem 1rem 2rem 1rem; }
+      .grilla3 main section .destinos .experiencia div p {
+        text-align: center;
+        font-size: 1rem;
+        word-spacing: 0.2rem;
+        line-height: 2rem;
+        margin: 1.5rem;
+        width: 50vw; }
+    .grilla3 main section .destinos .experiencia img {
+      width: 530px;
+      height: 400px; } }
 
 .grilla4 main {
   width: 99vw; }
@@ -633,70 +550,57 @@ main section div {
         .grilla4 main div section form .form__input--submit:hover {
           background-color: #27496D; }
 
-.grilla4 footer {
-  margin-top: 15vh; }
-
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   .grilla4 main section {
     margin: 5.5rem auto; }
     .grilla4 main section h2 {
       font-size: 1.5rem; }
-    .grilla4 main section form label {
+    .grilla4 main section form .form__label {
       margin-right: 5.5rem; }
-    .grilla4 main section form select {
+    .grilla4 main section form .select {
       margin: 1rem 4rem 3rem 4.6rem; } }
 
-@media (min-width: 1440px) {
+@media (min-width: 1025px) and (max-width: 1900px) {
   .grilla4 main section h2 {
     font-size: 2rem; }
-  .grilla4 main section form label {
-    margin-right: 10.5rem;
+  .grilla4 main section form .form__label {
+    margin-right: 11rem;
     font-size: 1.2rem; }
-  .grilla4 main section form select {
-    margin: 1rem 4rem 3rem 8.6rem; }
+  .grilla4 main section form .select {
+    margin-left: 8.5rem; }
   .grilla4 main section form .form__input--submit {
-    width: 50%;
-    font-size: 1.1rem; } }
-
-.grilla5 {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  gap: 0px 0px;
-  grid-template-areas: "header" "contenido5" "footer";
-  width: 100%;
-  height: 100vh; }
-  .grilla5 .header {
-    grid-area: header; }
-  .grilla5 .contenido5 {
-    grid-area: contenido5;
-    height: 60vh; }
-  .grilla5 .footer {
-    grid-area: footer;
-    margin-top: 540vh; }
+    font-size: 1.1rem;
+    padding: 2rem 15rem; } }
 
 .grilla5 main section h1 {
-  margin: 3rem;
+  width: 90vw;
+  margin: 2rem 0;
   color: #142850;
   font-weight: 600;
   text-align: center; }
 
-.grilla5 main section div h4 {
+.grilla5 main section div div h4 {
   font-style: italic;
   color: #142850;
   text-align: center;
   font-weight: 400; }
 
-.grilla5 main section div .subtitulo__plan {
+.grilla5 main section div div .subtitulo__plan {
   font-weight: 600; }
 
-.grilla5 main section div .parrafo__paquetes {
+.grilla5 main section div div .parrafo__paquetes {
   font-size: 0.8rem;
   text-align: center;
   margin-bottom: 3rem; }
 
-@media (min-width: 768px) {
+.grilla5 main section div img {
+  width: 300px;
+  height: 250px;
+  margin: 3rem; }
+
+@media (min-width: 768px) and (max-width: 1024px) {
   .grilla5 main section h1 {
+    width: 99vw;
     font-size: 3rem; }
   .grilla5 main section div {
     display: flex;
@@ -710,12 +614,29 @@ main section div {
       font-size: 1rem;
       line-height: 2rem;
       word-spacing: 0.5rem;
-      padding: 1rem 2rem; } }
+      padding: 1rem 2rem; }
+    .grilla5 main section div img {
+      margin: 3rem auto;
+      width: 350px; } }
 
-@media (min-width: 1440px) {
+@media (min-width: 1025px) and (max-width: 1900px) {
+  .grilla5 main section h1 {
+    color: #ffff;
+    background-color: #27496D;
+    width: 100vw;
+    padding: 2rem 0; }
   .grilla5 main section div div {
     margin-top: 3rem; }
+    .grilla5 main section div div h4 {
+      font-size: 2rem; }
+    .grilla5 main section div div .subtitulo__plan {
+      font-size: 1.5rem;
+      text-align: center; }
     .grilla5 main section div div .parrafo__paquetes {
-      padding: 1rem 4rem; }
+      font-size: 1.2rem;
+      padding: 1rem 4rem;
+      line-height: 2.5rem; }
   .grilla5 main section div img {
-    margin: 1rem 10rem; } }
+    width: 500px;
+    height: 400px;
+    margin: 2rem 28rem; } }

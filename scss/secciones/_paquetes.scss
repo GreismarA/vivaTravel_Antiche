@@ -1,58 +1,40 @@
 //PAQUETES
-.grilla5 {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    gap: 0px 0px;
-    grid-template-areas:
-        "header"
-        "contenido5"
-        "footer";
-    width: 100%;
-    height: 100vh;
-
-    .header {
-        grid-area: header;
-    }
-
-    .contenido5 {
-        grid-area: contenido5;
-        height: 60vh;
-    }
-
-    .footer {
-        grid-area: footer;
-        margin-top: 540vh;
-    }
-}
-
 //Main
 .grilla5 {
     main {
         section {
             h1 {
-                margin: 3rem;
+                width: 90vw;
+                margin: 2rem 0;
                 color: $azul-oscuro;
                 font-weight: 600;
                 text-align: center;
             }
 
             div {
-                h4 {
-                    font-style: italic;
-                    color: $azul-oscuro;
-                    text-align: center;
-                    font-weight: 400;
+                div {
+                    h4 {
+                        font-style: italic;
+                        color: $azul-oscuro;
+                        text-align: center;
+                        font-weight: 400;
+                    }
+
+                    .subtitulo__plan {
+                        font-weight: 600;
+                    }
+
+                    .parrafo__paquetes {
+                        font-size: 0.8rem;
+                        text-align: center;
+                        margin-bottom: 3rem;
+                    }
                 }
 
-                .subtitulo__plan {
-                    font-weight: 600;
-                }
-
-                .parrafo__paquetes {
-                    font-size: 0.8rem;
-                    text-align: center;
-                    margin-bottom: 3rem;
+                img {
+                    width: 300px;
+                    height: 250px;
+                    margin: 3rem;
                 }
             }
         }
@@ -61,11 +43,12 @@
 
 //Aqui van las medias Queries
 //Medias Tablet
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1024px) {
     .grilla5 {
         main {
             section {
                 h1 {
+                    width: 99vw;
                     font-size: 3rem;
                 }
 
@@ -90,6 +73,11 @@
                             padding: 1rem 2rem;
                         }
                     }
+
+                    img {
+                        margin: 3rem auto;
+                        width: 350px;
+                    }
                 }
             }
         }
@@ -97,23 +85,45 @@
 }
 
 //Medias Desktop
-@media (min-width: 1440px) {
+@media (min-width: 1025px) and (max-width: 1900px) {
     .grilla5 {
         main {
             section {
+                h1 {
+                    color: $blanco;
+                    background-color: $azul;
+                    width: 100vw;
+                    padding: 2rem 0;
+                }
+
                 div {
                     div {
                         margin-top: 3rem;
 
+                        h4 {
+                            font-size: 2rem;
+                        }
+
+                        .subtitulo__plan {
+                            font-size: 1.5rem;
+                            text-align: center;
+                        }
+
                         .parrafo__paquetes {
+                            font-size: 1.2rem;
                             padding: 1rem 4rem;
+                            line-height: 2.5rem;
+
                         }
                     }
 
                     img {
-                        margin: 1rem 10rem;
+                        width: 500px;
+                        height: 400px;
+                        margin: 2rem 28rem;
                     }
                 }
+
             }
         }
     }

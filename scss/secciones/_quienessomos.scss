@@ -1,59 +1,35 @@
 //QUIENES SOMOS
 .grilla2 {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    gap: 0px 0px;
-    grid-template-areas:
-        "header"
-        "contenido2"
-        "footer";
-    width: 100%;
-    height: 100vh;
-
-    .header {
-        grid-area: header;
-    }
-
-    .contenido2 {
-        grid-area: contenido2;
-        height: 60vh;
-    }
-
-    .footer {
-        grid-area: footer;
-        margin-top: 140vh;
-    }
-}
-
-//Main
-main {
-    section {
-        div {
-            display: flex;
-            flex-direction: column;
-            margin: 1rem 0.1rem;
-            width: 99vw;
-
+    main {
+        section {
             div {
+                display: flex;
                 flex-direction: column;
-                margin: 0.2rem;
+                margin: 1rem 0.1rem;
+                width: 99vw;
 
-                h1 {
-                    text-align: center;
-                    margin-bottom: 1.5rem;
+                div {
+                    flex-direction: column;
+                    margin: 0.2rem;
+
+                    h1 {
+                        text-align: center;
+                        margin-bottom: 1.5rem;
+                    }
+
+                    p {
+                        text-align: center;
+                        word-spacing: 0.2rem;
+                        font-size: 0.8rem;
+                        padding: 1rem 2rem;
+                    }
                 }
 
-                p {
-                    text-align: center;
-                    word-spacing: 0.2rem;
+                img {
+                    width: 300px;
+                    height: 415px;
+                    margin: 3rem 3rem;
                 }
-            }
-
-            img {
-                width: 300px;
-                height: 415px;
-                margin: 3rem 3rem;
             }
         }
     }
@@ -61,26 +37,28 @@ main {
 
 //Aqui van las Medias Queries
 //Media Tablet
-@media (min-width: 768px) {
-    main {
-        section {
-            div {
-                margin: 1.5rem 0.1rem;
-
+@media (min-width: 768px) and (max-width: 1024px) {
+    .grilla2 {
+        main {
+            section {
                 div {
-                    margin: 0.2rem 0rem;
+                    margin: 1.5rem 0.1rem;
 
-                    p{
-                        width: 80vw;
-                        margin: 0rem auto;
-                        line-height: 2rem;
+                    div {
+                        margin: 0.2rem 0rem;
+
+                        p {
+                            width: 80vw;
+                            margin: 0rem auto;
+                            line-height: 2rem;
+                        }
                     }
-                }
 
-                img {
-                    width: 500px;
-                    height: 470px;
-                    margin: 3rem 8.8rem;
+                    img {
+                        width: 500px;
+                        height: 470px;
+                        margin: 3rem 8.8rem;
+                    }
                 }
             }
         }
@@ -88,7 +66,7 @@ main {
 }
 
 //Media Desktop
-@media (min-width: 1440px) {
+@media (min-width: 1025px) and (max-width: 1900px) {
     .grilla2 {
         main {
             section {
@@ -125,10 +103,5 @@ main {
                 }
             }
         }
-    }
-
-    //footer
-    footer {
-        margin-top: 80vh;
     }
 }

@@ -1,7 +1,7 @@
 //Footer
 .footer {
-    background-color: #00909E;
-    margin-top: 115rem;
+    background-color: $turquesa;
+    margin-top: 10rem;
     width: 100vw;
     padding: 1rem 0rem 2rem 0rem;
 
@@ -14,6 +14,10 @@
             color: $blanco;
             font-size: 1.3rem;
             font-family: serif;
+
+            &:hover {
+                color: $azul-oscuro;
+            }
         }
 
         ul {
@@ -48,7 +52,7 @@
         }
     }
 
-    .container__footer--active {
+    .contenedor__footer--active {
         @extend %divFooter;
 
         form {
@@ -95,75 +99,22 @@
     }
 }
 
-//Aqui van las medias queries
-// Medias queries de Tablet
-@media (min-width: 768px) {
-    .footer {
-        margin-top: 220vh;
+//Aqui van las Medias Queries
+//Media Tablet
+@media (min-width: 768px) and (mas-width: 1024px) {
+    .footer{
+        width: 100vw;
     }
 }
 
-//Medias queries desktop
-@media(min-width: 1440px) {
-    .footer {
-        width: 100vw;
-        background-color: $turquesa;
-        display: flex;
-        flex-direction: row;
-        margin-top: 350vh;
-        align-items: stretch;
-        justify-content: space-between;
-
-        div {
-            margin: 2rem;
-            padding: 0.5rem 4rem;
-            border-bottom: none;
-            text-align: left;
-
-            h3 {
-                width: 60%;
-                font-weight: 600;
-                margin: 0.5rem;
-                letter-spacing: 0.1rem;
-            }
-
-            ul {
-                margin: 0.5rem;
-                display: block;
-            }
-
-            p {
-                margin-left: 0.5rem;
-                display: block;
-            }
-
-            iframe {
-                margin: 1.5rem 0.5rem;
-                display: block;
-            }
-        }
-
-        .container__footer--active {
-            margin: 2rem;
-            padding: 0.5rem 4rem 0.5rem 8rem;
-            border-bottom: none;
-            text-align: left;
-
-            form {
+//Media Desktop
+@media (min-width: 1025px) and (max-width: 1900px) {
+    .footer{
+        div{
+            &:hover iframe{
                 display: flex;
-
-                .input__suscrib {
-                    margin: 0.5rem;
-                    width: 11vw;
-                }
-
-                .input__enviar {
-                    margin: 1rem 2rem;
-                }
-            }
-
-            .fab {
-                font-size: 2rem;
+                width: 400px;
+                margin: 1rem auto;
             }
         }
     }
