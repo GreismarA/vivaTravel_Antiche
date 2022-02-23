@@ -1,28 +1,69 @@
 //DESTINOS
+//Aplicando grid
+.grilla3 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+        "header"
+        "contenido3"
+        "footer";
+    width: 100%;
+    height: 100vh;
+}
+
+.header {
+    grid-area: header;
+}
+
+.contenido3 {
+    grid-area: contenido3;
+    width: 99vw;
+    margin-top: 2rem;
+}
+
+.footer {
+    grid-area: footer;
+}
+
 //Main
 .grilla3 {
     main {
         section {
             div {
-                text-align: center;
-                word-spacing: 0.5rem;
-                margin-top: 1rem;
-                font-size: 1.5rem;
-                color: $azul-oscuro;
+                h1 {
+                    color: $blanco;
+                    background-color: $verde-claro;
+                    border-bottom: solid 1rem $verde-oscuro;
+                    text-align: center;
+                    padding: 2rem 0;
+                }
             }
 
             .destinos {
+                margin-top: 3rem;
+
                 div {
                     display: flex;
                     flex-direction: column;
 
                     div {
+                        text-align: center;
+                        word-spacing: 0.5rem;
+                        margin-top: 1rem;
+                        font-size: 1.5rem;
 
                         h3 {
                             text-align: center;
                             margin-bottom: 1rem;
                             font-size: 1.6rem;
-                            color: $azul-oscuro;
+                            background-color: $verde-oscuro;
+                            color: $blanco;
+                            font-weight: 600;
+                            padding: 0.5rem 0;
+                            border-left: solid 0.5rem $verde-claro;
+                            border-right: solid 0.5rem $verde-claro;
                         }
 
                         p {
@@ -30,7 +71,7 @@
                             text-align: center;
                             font-size: 0.8rem;
                             word-spacing: 0.4rem;
-                            line-height: 1.3rem;
+                            line-height: 1.7rem;
                         }
                     }
 
@@ -53,13 +94,16 @@
                             font-size: 1.6rem;
                             font-style: italic;
                             margin: 1rem;
+                            background-color: $verde-oscuro;
+                            color: $blanco;
+                            border-left: solid 0.5rem $verde-claro;
                         }
 
                         p {
                             text-align: center;
                             font-size: 0.8rem;
                             word-spacing: 0.4rem;
-                            line-height: 1.3rem;
+                            line-height: 1.7rem;
                         }
                     }
 
@@ -109,14 +153,13 @@
 }
 
 //Media Desktop
-@media (min-width: 1025px) and (max-width: 1900px) {
+@media (min-width: 1025px) and (max-width: 2560px) {
     .grilla3 {
         main {
             section {
                 div {
-                    @include titulos3 ();
-                    h1{
-                        background-color: $azul;
+                    h1 {
+                        background-color: $verde-claro;
                         font-weight: 600;
                         padding: 2rem 0;
                     }
@@ -127,6 +170,7 @@
                         .third__text {
                             display: flex;
                             flex-direction: column;
+
                             h3 {
                                 @include titulos3 ();
                             }
@@ -143,15 +187,22 @@
                         img {
                             width: 950px;
                             height: 520px;
+                            border-radius: 1.5rem;
+                            box-shadow: 8px 11px 5px -4px rgba(134, 134, 140, 0.49);
+                            -webkit-box-shadow: 8px 11px 5px -4px rgba(134, 134, 140, 0.49);
+                            -moz-box-shadow: 8px 11px 5px -4px rgba(134, 134, 140, 0.49);
+                            transition: 2s;
                         }
                     }
 
                     .experiencia {
                         display: flex;
                         flex-direction: row;
+
                         div {
                             display: flex;
                             flex-direction: column;
+
                             h4 {
                                 text-align: center;
                                 font-size: 2rem;

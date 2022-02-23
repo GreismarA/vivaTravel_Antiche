@@ -1,7 +1,14 @@
-// aqui se comienza con @ y se aplica con @include ... ();
+//MIXINS
 @mixin titulos3 {
     text-align: center;
     margin-bottom: 2rem;
     font-size: 2rem;
-    color: $azul-oscuro;
+    color: $blanco;
+}
+
+@mixin footerDesktop ($padding, $margin) {
+    padding: $padding;
+    margin: $margin;
+    border-bottom: none;
+    text-align: left;
 }

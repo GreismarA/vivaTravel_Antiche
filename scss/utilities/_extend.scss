@@ -1,4 +1,3 @@
-// aqui los llamo con % y los aplico con @exten %...
 //Extends
 %divFooter {
     margin: 1rem 0rem;
@@ -8,9 +7,47 @@
 }
 
 %inputFooter {
-    background-color: $turquesa;
+    background-color: $gris;
     color: $blanco;
     font-family: 'Poppins', sans-serif;
+}
+
+//Extends Seccion Inicio
+%h4Inicio {
+    text-align: center;
+    background-color: $verde-claro;
+    padding: 1rem 0;
+    color: $blanco;
+    border-radius: 1rem;
+    font-size: 1.1rem;
+    font-style: italic;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    margin: 1rem 0.2rem 0.1rem 0.2rem;
+    width: 90vw;
+    transition: 2s;
+}
+
+%h3Inicio {
+    text-align: center;
+    margin: 0.1rem 0.1rem;
+    padding: 0.1rem;
+    word-spacing: 0.4rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: $verde-oscuro;
+    width: 90vw;
+    transition: 2s;
+}
+
+%pInicio {
+    text-align: center;
+    margin: 0.5rem 0.4rem;
+    padding: 0.2rem;
+    word-spacing: 0.2rem;
+    line-height: 1.8rem;
+    width: 90vw;
+    transition: 2s;
 }
 
 //Extends Contacto
@@ -18,9 +55,9 @@
     width: 75%;
     margin: 0.5rem;
     padding: 0.5rem;
-    background-color: $azul-oscuro;
+    background-color: $verde-oscuro;
     border: none;
-    border-bottom: solid 1px $turquesa;
+    border-bottom: solid 1px $gris;
     color: $blanco;
     font-size: 1rem;
     font-family: 'Poppins', sans-serif;

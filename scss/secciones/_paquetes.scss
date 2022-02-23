@@ -1,40 +1,120 @@
 //PAQUETES
+//Aplicando grid
+.grilla5 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+        "header"
+        "contenido5"
+        "footer";
+    width: 100%;
+    height: 100vh;
+}
+
+.header {
+    grid-area: header;
+    width: 100%;
+}
+
+.contenido5 {
+    grid-area: contenido5;
+}
+
+.footer {
+    grid-area: footer;
+}
+
 //Main
 .grilla5 {
     main {
         section {
             h1 {
-                width: 90vw;
+                width: 100%;
                 margin: 2rem 0;
-                color: $azul-oscuro;
+                color: $blanco;
+                background-color: $verde-claro;
+                border-bottom: solid 1rem $verde-oscuro;
+                padding: 2rem 0;
                 font-weight: 600;
                 text-align: center;
             }
 
-            div {
-                div {
-                    h4 {
-                        font-style: italic;
-                        color: $azul-oscuro;
-                        text-align: center;
-                        font-weight: 400;
-                    }
+            .paquetes {
+                .g-4 {
+                    margin: 0.2rem;
 
-                    .subtitulo__plan {
-                        font-weight: 600;
-                    }
+                    div {
+                        padding: 0;
 
-                    .parrafo__paquetes {
-                        font-size: 0.8rem;
-                        text-align: center;
-                        margin-bottom: 3rem;
+                        div {
+                            .card-img-top {
+                                height: 300px;
+                            }
+
+                            div {
+                                h5 {
+                                    background-color: $verde-oscuro;
+                                    color: $blanco;
+                                    padding: 0.5rem 0;
+                                }
+
+                                .subtitulo__paquetes {
+                                    color: $gris;
+                                    font-weight: 600;
+                                }
+
+                                div {
+                                    display: flex;
+                                    flex-direction: column;
+                                    align-items: center;
+
+                                    a {
+                                        button {
+                                            background-color: $verde-claro;
+                                            border: none;
+                                            border-radius: 0.2rem;
+                                            padding: 0.5rem 1rem;
+                                            color: $blanco;
+                                            margin: 1rem;
+
+                                            &:hover {
+                                                background-color: $verde-oscuro;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
                     }
                 }
+            }
 
-                img {
-                    width: 300px;
-                    height: 250px;
-                    margin: 3rem;
+            .incluye {
+                margin-top: 8rem;
+
+                div {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    margin: 2rem 0.2rem;
+
+                    div {
+                        img {
+                            width: 200px;
+                            border-radius: 20rem;
+                        }
+
+                        div {
+                            text-align: center;
+
+                            h3 {
+                                color: $gris;
+                                font-weight: 600;
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -52,31 +132,13 @@
                     font-size: 3rem;
                 }
 
-                div {
-                    display: flex;
-                    flex-direction: column;
-                    justify-items: center;
-
-                    div {
-                        h4 {
-                            font-weight: 600;
+                .paquetes {
+                    .g-4 {
+                        div {
+                            .card {
+                                margin: 0 1rem;
+                            }
                         }
-
-                        .subtitulo__plan {
-                            text-align: center;
-                        }
-
-                        .parrafo__paquetes {
-                            font-size: 1rem;
-                            line-height: 2rem;
-                            word-spacing: 0.5rem;
-                            padding: 1rem 2rem;
-                        }
-                    }
-
-                    img {
-                        margin: 3rem auto;
-                        width: 350px;
                     }
                 }
             }
@@ -85,45 +147,56 @@
 }
 
 //Medias Desktop
-@media (min-width: 1025px) and (max-width: 1900px) {
+@media (min-width: 1025px) and (max-width: 2560px) {
     .grilla5 {
         main {
             section {
                 h1 {
                     color: $blanco;
-                    background-color: $azul;
+                    background-color: $verde-claro;
                     width: 100vw;
                     padding: 2rem 0;
                 }
 
-                div {
-                    div {
-                        margin-top: 3rem;
+                .paquetes {
+                    margin: 0;
 
-                        h4 {
-                            font-size: 2rem;
+                    .g-4 {
+                        margin: 0;
+
+                        .col {
+                            margin: 0;
+                            padding: 0;
+
+                            .card {
+                                margin: 4rem 0.5rem;
+                            }
                         }
-
-                        .subtitulo__plan {
-                            font-size: 1.5rem;
-                            text-align: center;
-                        }
-
-                        .parrafo__paquetes {
-                            font-size: 1.2rem;
-                            padding: 1rem 4rem;
-                            line-height: 2.5rem;
-
-                        }
-                    }
-
-                    img {
-                        width: 500px;
-                        height: 400px;
-                        margin: 2rem 28rem;
                     }
                 }
 
+                .incluye {
+                    margin-top: 14rem;
+
+                    div {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-around;
+
+                        div {
+                            display: flex;
+                            flex-direction: column;
+
+                            div {
+                                h3 {
+                                    &:hover {
+                                        color: $verde-oscuro;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
             }
         }
     }

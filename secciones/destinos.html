@@ -29,31 +29,40 @@
 <body>
     <div class="grilla3">
         <!-- Encabezado -->
-        <header class="container-fluid header">
-            <div class="row">
-                <a href="../index.html"><img src="../img/Logoviva.jpg" alt="Logo vivatravel" class="col-xs-12 logo"></a>
-                <nav class="col-xs-12">
-                    <ul class="nav__links">
-                        <li> <a href="../index.html">Inicio</a></li>
-                        <li> <a href="./nosotros.html">Nosotros</a></li>
-                        <!-- Submenu de destinos-->
-                        <li> <a href="./destinos.html">Destinos</a>
-                            <ul>
-                                <li> <a href="">Los Roques</a></li>
-                                <li> <a href="">Salto Angel</a></li>
-                                <li> <a href="">Falcon</a></li>
-                                <li> <a href="">Los Llanos</a></li>
-                            </ul>
-                        </li>
-                        <li> <a href="./contactanos.html">Contactanos</a></li>
-                        <li> <a href="./paquetes.html">Paquetes</a></li>
-                    </ul>
-                </nav>
-            </div>
+        <header class="header">
+            <nav class="navbar navbar-expand-xl navbar-dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="../index.html"><img src="../img/Logoviva.jpg" alt="Logo vivatravel"
+                            class="logo"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="menu__links" href="../index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="menu__links" href="./nosotros.html">Nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="menu__links" href="./destinos.html">Destinos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="menu__links" href="./contactanos.html">Contactanos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="menu__links" href="./paquetes.html">Paquetes</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
         </header>
         <!-- Division del encabezado y contenido -->
-        <main class="container-fluid contenido3">
-            <section class="row">
+        <main class="contenido3">
+            <section>
                 <div class="third__titulo">
                     <h1>Nuestros Destinos</h1>
                 </div>
@@ -225,7 +234,7 @@
                     <div class="third__destinos">
                         <div class="third__text">
                             <h3 class="third__subtitulo">Falcon</h3>
-                            <p class="third__parrafo">a aventura a este destino es totalmente flexible. Puedes
+                            <p class="third__parrafo">La aventura a este destino es totalmente flexible. Puedes
                                 elegir
                                 entre
                                 un plan de 3 días 2 noches o de 4 días 3 noches.
@@ -390,8 +399,8 @@
         </main>
 
         <!-- Pie de pagina -->
-        <footer class="container-fluid footer">
-            <div class="row contenedor__footer">
+        <footer class="footer">
+            <div class="contenedor__footer">
                 <h3 class="footer__subtitle">Destinos</h3>
                 <ul>
                     <li>Los Roques</li>
@@ -400,18 +409,14 @@
                     <li>Los Llanos</li>
                 </ul>
             </div>
-            <div class="row contenedor__footer">
+            <div class="contenedor__footer">
                 <h3 class="footer__subtitle">Contactanos</h3>
                 <p class="footer__parrafo">Telefonos +584243803978</p>
                 <p class="footer__parrafo">E-mail vivatravel@gmail.com</p>
                 <p class="footer__parrafo">Dirección: Calle Cali con Calle Veracruz, Torre ABA, Piso 9, Las Mercedes.
                     Caracas - Venezuela</p>
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d125549.08972855116!2d-66.96040646959244!3d10.468384101150727!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c2a58adcd824807%3A0x93dd2eae0a998483!2sCaracas%2C%20Distrito%20Capital%2C%20Venezuela!5e0!3m2!1ses-419!2sar!4v1638853643723!5m2!1ses-419!2sar"
-                    width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy"
-                    class="footer__iframe"></iframe>
             </div>
-            <div class="row contenedor__footer--active">
+            <div class="contenedor__footer--active">
                 <h3 class="footer__subtitle">Suscribete</h3>
                 <p class="footer__parrafo">Y recibe nuestro boletín con ofertas especiales</p>
                 <form class="footer__form">

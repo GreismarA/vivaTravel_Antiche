@@ -29,126 +29,187 @@
 <body>
     <div class="grilla5">
         <!-- Encabezado -->
-        <header class="container-fluid header">
-            <div class="row">
-                <a href="../index.html"><img src="../img/Logoviva.jpg" alt="Logo vivatravel" class="col-xs-12 logo"></a>
-                <nav class="col-xs-12">
-                    <ul class="nav__links">
-                        <li> <a href="../index.html">Inicio</a></li>
-                        <li> <a href="./nosotros.html">Nosotros</a></li>
-                        <!-- Submenu de destinos-->
-                        <li> <a href="./destinos.html">Destinos</a>
-                            <ul>
-                                <li> <a href="">Los Roques</a></li>
-                                <li> <a href="">Salto Angel</a></li>
-                                <li> <a href="">Falcon</a></li>
-                                <li> <a href="">Los Llanos</a></li>
-                            </ul>
-                        </li>
-                        <li> <a href="./contactanos.html">Contactanos</a></li>
-                        <li> <a href="./paquetes.html">Paquetes</a></li>
-                    </ul>
-                </nav>
-            </div>
+        <header class="header">
+            <nav class="navbar navbar-expand-xl navbar-dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="../index.html"><img src="../img/Logoviva.jpg" alt="Logo vivatravel"
+                            class="logo"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="menu__links" href="../index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="menu__links" href="./nosotros.html">Nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="menu__links" href="./destinos.html">Destinos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="menu__links" href="./contactanos.html">Contactanos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="menu__links" href="./paquetes.html">Paquetes</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
         </header>
 
         <!-- Division del encabezado y el contenido -->
-        <main class="container-fluid contenido5">
-            <section class="row">
+        <main class="contenido5">
+            <section>
                 <h1 class="paquetesTitulo">Paquetes</h1>
                 <!-- Seccion de paquetes -->
                 <div class="paquetes">
-                    <div class="texto__paquetes">
-                        <h4 class="subtitulo__paquetes">Salto Angel</h4>
-                        <p class="subtitulo__plan">Plan de 4 días y 3 noches o 5 días y 4 noches</p>
-                        <p class="parrafo__paquetes">
-                            - Boletos aéreos Caracas - Canaima ida y vuelta.
-                            - Estadía en el mejor lodge.
-                            - Todas las comidas incluidas.
-                            - Bebidas incluidas: jugo de naranja en el desayuno, jugos del día durante las comidas y
-                            display
-                            de
-                            infusiones, té y café. (el resto de las bebidas deben ser canceladas al momento del check
-                            out).
-                            - Experiencia "Paseo por la Laguna de Canaima con saltos Sapo y Hacha". (se incluyen Saltos
-                            Wadaima
-                            y Golondrina si el nivel del río lo permite).
-                            - 1 Sesión de stand up paddle (SUP) en la Laguna.
-                        </p>
+                    <div class="row row-cols-1 row-cols-md-2 g-4">
+                        <div class="col">
+                            <div class="card">
+                                <img src="../img/paquete1.jpg" class="card-img-top" alt="Salto Angel">
+                                <div class="card-body">
+                                    <h5 class="card-title">Salto Angel</h5>
+                                    <p class="card-text subtitulo__paquetes">Plan de 4 días y 3 noches o 5 días y 4
+                                        noches</p>
+                                    <p class="card-text">-Boletos aéreos Caracas - Canaima ida y vuelta.</p>
+                                    <p class="card-text">-Estadía en el mejor lodge.</p>
+                                    <p class="card-text">-Todas las comidas incluidas.</p>
+                                    <p class="card-text">-Bebidas incluidas: no alcohólicas</p>
+                                    <p class="card-text">-Experiencia "Paseo por la Laguna de Canaima con saltos Sapo y
+                                        Hacha".</p>
+                                    <p class="card-text">-1 Sesión de fotos en la Laguna.</p>
+                                    <div>
+                                        <a href="https://www.whatsapp.com" target="_blank"><button
+                                                class="bt__paquetes">Reservar</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <img src="../img/paquete2.jpg" class="card-img-top" alt="snorkeling">
+                                <div class="card-body">
+                                    <h5 class="card-title">Los Roques</h5>
+                                    <p class="card-text subtitulo__paquetes">Plan de 4 días y 3 noches o 5 días y 4
+                                        noches</p>
+                                    <p class="card-text">-Boletos aéreos Caracas - Los Roques ida y vuelta</p>
+                                    <p class="card-text">-Estadía en el mejor lodge</p>
+                                    <p class="card-text">-Todas las comidas incluidas</p>
+                                    <p class="card-text">-Bebidas incluidas: no alcohólicas</p>
+                                    <p class="card-text">-Experiencia "Paseo por los mejores cayos: cayo Madriski y cayo
+                                        de agua"</p>
+                                    <p class="card-text">-Full day en cayo francisqui</p>
+                                    <div>
+                                        <a href="https://www.whatsapp.com" target="_blank"><button
+                                                class="bt__paquetes">Reservar</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <img src="../img/paquete3.jpg" class="card-img-top" alt="medanos">
+                                <div class="card-body">
+                                    <h5 class="card-title">Falcon</h5>
+                                    <p class="card-text subtitulo__paquetes">Plan de 4 días y 3 noches o 5 días y 4
+                                        noches</p>
+                                    <p class="card-text">-Boletos aéreos Caracas - Coro ida y vuelta</p>
+                                    <p class="card-text">-Estadía en el mejor lodge</p>
+                                    <p class="card-text">-Todas las comidas incluidas</p>
+                                    <p class="card-text">-Bebidas incluidas: no alcohólicas</p>
+                                    <p class="card-text">-Experiencia "Paseo por los medanos de Coro y las salinas de
+                                        cumaragua"</p>
+                                    <p class="card-text">-Franela dry fit de Viva Travel</p>
+                                    <div>
+                                        <a href="https://www.whatsapp.com" target="_blank"><button
+                                                class="bt__paquetes">Reservar</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <img src="../img/paquete4.jpg" class="card-img-top" alt="caiman">
+                                <div class="card-body">
+                                    <h5 class="card-title">Los Llanos</h5>
+                                    <p class="card-text subtitulo__paquetes">Plan de 4 días y 3 noches o 5 días y 4
+                                        noches</p>
+                                    <p class="card-text">-Boletos aéreos Caracas - Apure ida y vuelta</p>
+                                    <p class="card-text">-Estadía en el mejor lodge</p>
+                                    <p class="card-text">-Todas las comidas incluidas</p>
+                                    <p class="card-text">-Bebidas incluidas: no alcohólicas</p>
+                                    <p class="card-text">-Experiencia "Paseo diurno y nocturno por el safari del Hato El
+                                        Cedral"</p>
+                                    <p class="card-text">-Franela dry fit de Viva Travel</p>
+                                    <div>
+                                        <a href="https://www.whatsapp.com" target="_blank"><button
+                                                class="bt__paquetes">Reservar</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <img src="../img/paquete1.jpg" alt="salto Angel" class="img__paquetes">
                 </div>
-                <div class="paquetes">
-                    <div class="texto__paquetes">
-                        <h4 class="subtitulo__paquetes">Los Roques</h4>
-                        <p class="subtitulo__plan">Plan de 4 días y 3 noches o 5 días y 4 noches</p>
-                        <p class="parrafo__paquetes">
-                            -Traslado desde Caracas al Aeropuerto Nacional de Maiquetia ida y vuelta
-                            - Boletos aéreos Caracas - Los Roques ida y vuelta
-                            - Estadía en el mejor lodge
-                            - Todas las comidas incluidas
-                            - Bebidas incluidas: jugo de naranja en el desayuno, jugos del día durante las comidas y
-                            display
-                            de
-                            infusiones, té y café (el resto de las bebidas deben ser canceladas al momento del check
-                            out)
-                            - Franela dry fit de Soco
-                            - Experiencia "Paseo por cayo Madriski y cayo de agua"
-                            - 1 sesión de stand up paddle (SUP) en cayo de agua
-                            - Full day en francisqui
-                        </p>
+
+                <div class="incluye">
+                    <div class="contenedorIncluye">
+                        <div class="contenedorIncluye__hijo">
+                            <img src="../img/1.png" alt="Avion" class="img__incluye">
+                            <div class="texto__incluye">
+                                <h3>Boletos Aereos</h3>
+                                <p>Los boletos aereos estan incluidos.</p>
+                            </div>
+                        </div>
+                        <div class="contenedorIncluye__hijo">
+                            <img src="../img/2.png" alt="Casa" class="img__incluye">
+                            <div class="texto__incluye">
+                                <h3>Hospedaje</h3>
+                                <p>Hospedaje en las mejores posadas.</p>
+                            </div>
+                        </div>
+                        <div class="contenedorIncluye__hijo">
+                            <img src="../img/3.png" alt="Plato" class="img__incluye">
+                            <div class="texto__incluye">
+                                <h3>Comidas</h3>
+                                <p>Desayunos, almuerzos, cenas y snaks.</p>
+                            </div>
+                        </div>
                     </div>
-                    <img src="../img/paquete2.jpg" alt="snorkeling" class="img__paquetes">
-                </div>
-                <div class="paquetes">
-                    <div class="texto__paquetes">
-                        <h4 class="subtitulo__paquetes">Falcon</h4>
-                        <p class="subtitulo__plan">Plan de 4 días y 3 noches o 5 días y 4 noches</p>
-                        <p class="parrafo__paquetes">
-                            -Traslado desde Caracas al Aeropuerto Nacional de Maiquetia ida y vuelta
-                            - Boletos aéreos Caracas - Coro ida y vuelta
-                            - Estadía en el mejor lodge
-                            - Todas las comidas incluidas
-                            - Bebidas incluidas: jugo de naranja en el desayuno, jugos del día durante las comidas y
-                            display
-                            de
-                            infusiones, té y café (el resto de las bebidas deben ser canceladas al momento del check
-                            out)
-                            - Franela dry fit de Soco
-                            - Experiencia "Paseo por los medanos de Coro y las salinas de cumaragua"
-                            - 1 sesión de stand up paddle (SUP) en los medanos
-                            - Full day en la peninsula de paraguaná
-                        </p>
+
+                    <div class="contenedorIncluye">
+                        <div class="contenedorIncluye__hijo">
+                            <img src="../img/4.png" alt="Copas" class="img__incluye">
+                            <div class="texto__incluye">
+                                <h3>Bebidas</h3>
+                                <p>Bebidas alcohólicas y no alcohólicas.</p>
+                            </div>
+                        </div>
+                        <div class="contenedorIncluye__hijo">
+                            <img src="../img/5.png" alt="Camara" class="img__incluye">
+                            <div class="texto__incluye">
+                                <h3>Kit de Fotos y Videos</h3>
+                                <p>Edición de material audiovisual capturado en el viaje.</p>
+                            </div>
+                        </div>
+                        <div class="contenedorIncluye__hijo">
+                            <img src="../img/6.png" alt="Cartel de destinos" class="img__incluye">
+                            <div class="texto__incluye">
+                                <h3>Paseos</h3>
+                                <p>Paseos a los mejores lugares de tu destino.</p>
+                            </div>
+                        </div>
                     </div>
-                    <img src="../img/paquete3.jpg" alt="medanos" class="img__paquetes">
-                </div>
-                <div class="paquetes">
-                    <div class="texto__paquetes">
-                        <h4 class="subtitulo__paquetes">Los Llanos</h4>
-                        <p class="subtitulo__plan">Plan de 4 días y 3 noches o 5 días y 4 noches</p>
-                        <p class="parrafo__paquetes">
-                            -Traslado desde Caracas al Aeropuerto Nacional de Maiquetia ida y vuelta
-                            - Boletos aéreos Caracas - Apure ida y vuelta
-                            - Estadía en el mejor lodge
-                            - Todas las comidas incluidas
-                            - Bebidas incluidas: jugo de naranja en el desayuno, jugos del día durante las comidas y
-                            display
-                            de
-                            infusiones, té y café (el resto de las bebidas deben ser canceladas al momento del check
-                            out)
-                            - Franela dry fit de Soco
-                            - Experiencia "Paseo por el Hato El Cedral"
-                            - 1 sesión de stand up paddle (SUP)
-                        </p>
-                    </div>
-                    <img src="../img/paquete4.jpg" alt="caiman" class="img__paquetes">
                 </div>
             </section>
         </main>
 
         <!-- Pie de pagina -->
-        <footer class="container-fluid footer">
-            <div class="row contenedor__footer">
+        <footer class="footer">
+            <div class="contenedor__footer">
                 <h3 class="footer__subtitle">Destinos</h3>
                 <ul>
                     <li>Los Roques</li>
@@ -157,18 +218,14 @@
                     <li>Los Llanos</li>
                 </ul>
             </div>
-            <div class="row contenedor__footer">
+            <div class="contenedor__footer">
                 <h3 class="footer__subtitle">Contactanos</h3>
                 <p class="footer__parrafo">Telefonos +584243803978</p>
                 <p class="footer__parrafo">E-mail vivatravel@gmail.com</p>
                 <p class="footer__parrafo">Dirección: Calle Cali con Calle Veracruz, Torre ABA, Piso 9, Las Mercedes.
                     Caracas - Venezuela</p>
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d125549.08972855116!2d-66.96040646959244!3d10.468384101150727!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c2a58adcd824807%3A0x93dd2eae0a998483!2sCaracas%2C%20Distrito%20Capital%2C%20Venezuela!5e0!3m2!1ses-419!2sar!4v1638853643723!5m2!1ses-419!2sar"
-                    width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy"
-                    class="footer__iframe"></iframe>
             </div>
-            <div class="row contenedor__footer--active">
+            <div class="contenedor__footer--active">
                 <h3 class="footer__subtitle">Suscribete</h3>
                 <p class="footer__parrafo">Y recibe nuestro boletín con ofertas especiales</p>
                 <form class="footer__form">

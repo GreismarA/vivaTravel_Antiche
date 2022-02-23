@@ -1,0 +1,7 @@
+Viva Travel
+*Cambie los colores del proyecto.
+*Cambie el logo del proyecto.
+*Maquete el layout general con grid, y el interno con flexbox
+*Cambie el menu a menu hamburguesa.
+*Cambie el nombre de la seccion "Quienes somos" a "Nosotros"
+*Agregue contenido a la seccion nosotros, y paquetes.

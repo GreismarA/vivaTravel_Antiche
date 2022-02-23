@@ -2,8 +2,6 @@
 @import './utilities/variables';
 @import './utilities/extend';
 @import './utilities/mixins';
-@import './utilities/maps';
-
 
 // Importaciones/ Particiones
 @import './base/reset';
@@ -15,7 +13,7 @@
 
 //Secciones
 @import './secciones/index';
-@import './secciones/quienessomos';
+@import './secciones/nosotros';
 @import './secciones/destinos';
 @import './secciones/contactanos';
 @import './secciones/paquetes';

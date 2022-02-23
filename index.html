@@ -29,126 +29,145 @@
 <body>
     <div class="grilla1">
         <!-- Encabezado -->
-        <header class="container-fluid header">
-            <div class="row">
-                <a href="./index.html"><img src="./img/Logoviva.jpg" alt="Logo vivatravel" class="col-xs-12 logo"></a>
-                <nav class="col-xs-12">
-                    <ul class="nav__links">
-                        <li> <a href="./index.html">Inicio</a></li>
-                        <li> <a href="./secciones/nosotros.html">Nosotros</a></li>
-                        <!-- Submenu de destinos-->
-                        <li> <a href="./secciones/destinos.html">Destinos</a>
-                            <ul>
-                                <li> <a href="">Los Roques</a></li>
-                                <li> <a href="">Salto Angel</a></li>
-                                <li> <a href="">Falcon</a></li>
-                                <li> <a href="">Los Llanos</a></li>
-                            </ul>
-                        </li>
-                        <li> <a href="./secciones/contactanos.html">Contactanos</a></li>
-                        <li> <a href="./secciones/paquetes.html">Paquetes</a></li>
-                    </ul>
-                </nav>
-            </div>
+        <header class="header">
+            <nav class="navbar navbar-expand-xl navbar-dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="./index.html"><img src="./img/Logoviva.jpg" alt="Logo vivatravel"
+                            class="logo"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="menu__links" href="./index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="menu__links" href="./secciones/nosotros.html">Nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="menu__links" href="./secciones/destinos.html">Destinos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="menu__links" href="./secciones/contactanos.html">Contactanos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="menu__links" href="./secciones/paquetes.html">Paquetes</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
         </header>
         <!-- Contenido Principal -->
-        <main class="container-fluid">
-            <video src="./videos/videoPrincipal.mp4" autoplay muted loop class="row video__principal"></video>
-            <div class="row contenido">
-                <div class="col-xs-12">
-                    <p class="animate__animated animate__bounceInLeft parrafo__inicial">Somos la empresa número uno de turismo de aventura en Venezuela.
-                        Te llevamos
-                        a vivir
-                        experiencias
-                        cuidadosamente personalizadas en destinos paradisíacos de nuestro país. ¡Garantizamos tu
-                        seguridad y
-                        confort
-                        para que disfrutes al máximo!
-                    </p>
-                </div>
-                <!-- Breve descripcion de destinos -->
-                <section class="col-xs-12">
-                    <!-- Archipielago los Roques -->
-                    <div class="contenedor">
-                        <div class="contenedor__text">
-                            <h4 class="animate__animated animate__bounceInLeft contenedorh4">Archipielago Los Roques</h4>
-                            <h3 class="animate__animated animate__bounceInLeft contenedor__subtitle">Los Roques</h3>
-                            <p class="animate__animated animate__bounceInLeft contenedor__parrafo">Esta isla, con sus playas y cayos, se ha convertido en una de
-                                las
-                                joyas de las Antillas Menores,
-                                sobre todo porque su tierra guarda historias de bucaneros y piratas. En medio de un
-                                territorio
-                                casi
-                                deshabitado, sus selectos servicios turísticos ofrecen experiencias diversas para los
-                                más
-                                aventureros.
-                            </p>
-                        </div>
-                        <img src="./img/Losroques1.jpg" alt="Los Roques" class="animate__animated animate__bounceInLeft contenedor__img">
-                    </div>
-                    <!-- Canaima -->
-                    <div class="contenedorReverse">
-                        <div class="contenedorReverse__text">
-                            <h4 class="animate__animated animate__bounceInLeft contenedorh4">Canaima</h4>
-                            <h3 class="animate__animated animate__bounceInLeft contenedorReverse__subtitle">Salto Angel</h3>
-                            <p class="animate__animated animate__bounceInLeft contenedorReverse__parrafo">En medio de un paisaje único, la caída de agua más
-                                grande del
-                                mundo se
-                                convierte en un lugar
-                                inolvidable. El Kerepakupai Vená es uno de los sitios más visitados por los extranjeros
-                                en
-                                cualquier
-                                temporada. Convergen en armonía selva, sabana, tepuyes, saltos de agua, ríos y animales
-                                salvajes.
-                            </p>
-                        </div>
-                        <img src="./img/Saltoangel1.jpg" alt="Salto Angel" class="animate__animated animate__bounceInLeft contenedorReverse__img">
-                    </div>
-                    <!-- Falcon -->
-                    <div class="contenedor">
-                        <div class="contenedor__text">
-                            <h4 class="animate__animated animate__bounceInLeft contenedorh4">Falcon</h4>
-                            <h3 class="animate__animated animate__bounceInLeft contenedor__subtitle">Adicora</h3>
-                            <p class="animate__animated animate__bounceInLeft contenedor__parrafo">El encanto de sus costas, lo imponente de su desierto y la
-                                belleza de
-                                sus rosadas salinas hace de
-                                Falcón un destino con variados atractivos turísticos. Los atardeceres y crepúsculos
-                                inolvidables
-                                de
-                                las playas en Morrocoy, los médanos de Coro y el camino de palmeras forman parte de esta
-                                experiencia.
-                            </p>
-                        </div>
-                        <img src="./img/Falcon1.jpg" alt="Adicora Falcon" class="animate__animated animate__bounceInLeft contenedor__img">
-                    </div>
-                    <!-- Apure -->
-                    <div class="contenedorReverse">
-                        <div class="contenedorReverse__text">
-                            <h4 class="animate__animated animate__bounceInLeft contenedorh4">Apure</h4>
-                            <h3 class="animate__animated animate__bounceInLeft contenedorReverse__subtitle">Los Llanos</h3>
-                            <p class="animate__animated animate__bounceInLeft contenedorReverse__parrafo">En un horizonte que parece perderse de vista, la
-                                abierta
-                                sabana, con
-                                sus ríos y lagunas, es un baúl
-                                de tesoros naturales. Si te animas a un safari podrás contemplar chigüires, venados y
-                                toda clase
-                                de
-                                aves. ¿Te imaginas tocar la serpiente más grande de toda América? ¿O alimentar al
-                                segundo
-                                cocodrilo
-                                más grande del mundo?
-                            </p>
-                        </div>
-                        <img src="./img/Losllanos1.jpg" alt="Chiguiros en el rio" class="animate__animated animate__bounceInLeft contenedorReverse__img">
-                    </div>
-                </section>
+        <main class="contenido">
+            <video src="./videos/videoPrincipal.mp4" autoplay muted loop class="video__principal"></video>
+            <div>
+                <p class="animate__animated animate__bounceInLeft parrafo__inicial">Somos la empresa número uno de
+                    turismo de aventura en Venezuela.
+                    Te llevamos
+                    a vivir
+                    experiencias
+                    cuidadosamente personalizadas en destinos paradisíacos de nuestro país. ¡Garantizamos tu
+                    seguridad y
+                    confort
+                    para que disfrutes al máximo!
+                </p>
             </div>
+            <!-- Breve descripcion de destinos -->
+            <section class="">
+                <!-- Archipielago los Roques -->
+                <div class="contenedor">
+                    <div class="contenedor__text">
+                        <h4 class="animate__animated animate__bounceInLeft contenedorh4">Archipielago Los Roques
+                        </h4>
+                        <h3 class="animate__animated animate__bounceInLeft contenedor__subtitle">Los Roques</h3>
+                        <p class="animate__animated animate__bounceInLeft contenedor__parrafo">Esta isla, con sus
+                            playas y cayos, se ha convertido en una de
+                            las
+                            joyas de las Antillas Menores,
+                            sobre todo porque su tierra guarda historias de bucaneros y piratas. En medio de un
+                            territorio
+                            casi
+                            deshabitado, sus selectos servicios turísticos ofrecen experiencias diversas para los
+                            más
+                            aventureros.
+                        </p>
+                    </div>
+                    <img src="./img/Losroques1.jpg" alt="Los Roques"
+                        class="animate__animated animate__bounceInLeft contenedor__img">
+                </div>
+                <!-- Canaima -->
+                <div class="contenedorReverse">
+                    <div class="contenedorReverse__text">
+                        <h4 class="animate__animated animate__bounceInLeft contenedorh4">Canaima</h4>
+                        <h3 class="animate__animated animate__bounceInLeft contenedorReverse__subtitle">Salto Angel
+                        </h3>
+                        <p class="animate__animated animate__bounceInLeft contenedorReverse__parrafo">En medio de un
+                            paisaje único, la caída de agua más
+                            grande del
+                            mundo se
+                            convierte en un lugar
+                            inolvidable. El Kerepakupai Vená es uno de los sitios más visitados por los extranjeros
+                            en
+                            cualquier
+                            temporada. Convergen en armonía selva, sabana, tepuyes, saltos de agua, ríos y animales
+                            salvajes.
+                        </p>
+                    </div>
+                    <img src="./img/Saltoangel1.jpg" alt="Salto Angel"
+                        class="animate__animated animate__bounceInLeft contenedorReverse__img">
+                </div>
+                <!-- Falcon -->
+                <div class="contenedor">
+                    <div class="contenedor__text">
+                        <h4 class="animate__animated animate__bounceInLeft contenedorh4">Falcon</h4>
+                        <h3 class="animate__animated animate__bounceInLeft contenedor__subtitle">Adicora</h3>
+                        <p class="animate__animated animate__bounceInLeft contenedor__parrafo">El encanto de sus
+                            costas, lo imponente de su desierto y la
+                            belleza de
+                            sus rosadas salinas hace de
+                            Falcón un destino con variados atractivos turísticos. Los atardeceres y crepúsculos
+                            inolvidables
+                            de
+                            las playas en Morrocoy, los médanos de Coro y el camino de palmeras forman parte de esta
+                            experiencia.
+                        </p>
+                    </div>
+                    <img src="./img/Falcon1.jpg" alt="Adicora Falcon"
+                        class="animate__animated animate__bounceInLeft contenedor__img">
+                </div>
+                <!-- Apure -->
+                <div class="contenedorReverse">
+                    <div class="contenedorReverse__text">
+                        <h4 class="animate__animated animate__bounceInLeft contenedorh4">Apure</h4>
+                        <h3 class="animate__animated animate__bounceInLeft contenedorReverse__subtitle">Los Llanos
+                        </h3>
+                        <p class="animate__animated animate__bounceInLeft contenedorReverse__parrafo">En un
+                            horizonte que parece perderse de vista, la
+                            abierta
+                            sabana, con
+                            sus ríos y lagunas, es un baúl
+                            de tesoros naturales. Si te animas a un safari podrás contemplar chigüires, venados y
+                            toda clase
+                            de
+                            aves. ¿Te imaginas tocar la serpiente más grande de toda América? ¿O alimentar al
+                            segundo
+                            cocodrilo
+                            más grande del mundo?
+                        </p>
+                    </div>
+                    <img src="./img/Losllanos1.jpg" alt="Chiguiros en el rio"
+                        class="animate__animated animate__bounceInLeft contenedorReverse__img">
+                </div>
+            </section>
         </main>
 
         <!-- Pie de pagina -->
 
-        <footer class="container-fluid footer">
-            <div class="row contenedor__footer">
+        <footer class="footer">
+            <div class="contenedor__footer">
                 <h3 class="footer__subtitle">Destinos</h3>
                 <ul>
                     <li>Los Roques</li>
@@ -157,18 +176,14 @@
                     <li>Los Llanos</li>
                 </ul>
             </div>
-            <div class="row contenedor__footer">
+            <div class="contenedor__footer">
                 <h3 class="footer__subtitle">Contactanos</h3>
                 <p class="footer__parrafo">Telefonos +584243803978</p>
                 <p class="footer__parrafo">E-mail vivatravel@gmail.com</p>
                 <p class="footer__parrafo">Dirección: Calle Cali con Calle Veracruz, Torre ABA, Piso 9, Las Mercedes.
                     Caracas - Venezuela</p>
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d125549.08972855116!2d-66.96040646959244!3d10.468384101150727!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c2a58adcd824807%3A0x93dd2eae0a998483!2sCaracas%2C%20Distrito%20Capital%2C%20Venezuela!5e0!3m2!1ses-419!2sar!4v1638853643723!5m2!1ses-419!2sar"
-                    width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy"
-                    class="footer__iframe"></iframe>
             </div>
-            <div class="row contenedor__footer--active">
+            <div class="contenedor__footer--active">
                 <h3 class="footer__subtitle">Suscribete</h3>
                 <p class="footer__parrafo">Y recibe nuestro boletín con ofertas especiales</p>
                 <form class="footer__form">

@@ -5,29 +5,54 @@
   border-bottom: solid #ffff 1px; }
 
 .footer .contenedor__footer--active form .input__suscrib, .footer .contenedor__footer--active form .input__enviar {
-  background-color: #00909E;
+  background-color: #3A3535;
   color: #ffff;
   font-family: 'Poppins', sans-serif; }
 
-.grilla4 main div section form input, .grilla4 main div section form textarea {
+.grilla1 main section .contenedor div h4, .grilla1 main section .contenedorReverse div h4 {
+  text-align: center;
+  background-color: #29BB89;
+  padding: 1rem 0;
+  color: #ffff;
+  border-radius: 1rem;
+  font-size: 1.1rem;
+  font-style: italic;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  margin: 1rem 0.2rem 0.1rem 0.2rem;
+  width: 90vw;
+  transition: 2s; }
+
+.grilla1 main section .contenedor div h3, .grilla1 main section .contenedorReverse div h3 {
+  text-align: center;
+  margin: 0.1rem 0.1rem;
+  padding: 0.1rem;
+  word-spacing: 0.4rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #1E6F5C;
+  width: 90vw;
+  transition: 2s; }
+
+.grilla1 main section .contenedor div p, .grilla1 main section .contenedorReverse div p {
+  text-align: center;
+  margin: 0.5rem 0.4rem;
+  padding: 0.2rem;
+  word-spacing: 0.2rem;
+  line-height: 1.8rem;
+  width: 90vw;
+  transition: 2s; }
+
+.grilla4 main section form input, .grilla4 main section form textarea {
   width: 75%;
   margin: 0.5rem;
   padding: 0.5rem;
-  background-color: #142850;
+  background-color: #1E6F5C;
   border: none;
-  border-bottom: solid 1px #00909E;
+  border-bottom: solid 1px #3A3535;
   color: #ffff;
   font-size: 1rem;
   font-family: 'Poppins', sans-serif; }
-
-.containerh4 {
-  font-size: 1.2rem; }
-
-.container__subtitle {
-  font-size: 2rem; }
-
-.containerReverse__subtitle {
-  font-size: 2rem; }
 
 * {
   margin: 0;
@@ -37,75 +62,65 @@
 body {
   font-family: 'Poppins', sans-serif; }
 
-.row {
-  padding: 0; }
-
 .header {
-  background-color: #00909E;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
+  background-color: #3A3535;
   width: 100vw; }
-  .header a {
-    display: flex;
-    justify-content: center; }
-    .header a .logo {
-      width: 80px;
-      height: 45px;
-      margin: 0.5rem 2.5rem;
-      border-radius: 500px; }
   .header nav {
-    width: 100vw;
     padding: 0; }
-    .header nav .nav__links {
-      display: flex;
-      justify-content: center;
-      align-items: center;
+    .header nav div {
       padding: 0; }
-      .header nav .nav__links li {
-        display: inline-block;
-        position: relative;
-        margin: 0.2rem;
-        font-size: 0.8rem;
-        font-weight: 300;
-        padding: 0.1rem; }
-        .header nav .nav__links li a {
-          color: #ffff;
-          text-decoration: none;
-          list-style: none; }
-        .header nav .nav__links li ul {
-          position: absolute;
-          display: none; }
-          .header nav .nav__links li ul li {
-            display: block; }
-        .header nav .nav__links li:hover ul {
-          display: block;
-          background-color: #00909E;
-          border: solid; }
+      .header nav div a .logo {
+        width: 80px;
+        height: 45px;
+        margin: 1rem;
+        border-radius: 500px; }
+      .header nav div .navbar-toggler {
+        border: solid #ffff;
+        margin-right: 0.5rem; }
+      .header nav div div ul {
+        padding-left: 1rem; }
+        .header nav div div ul li {
+          margin: 0.5rem 0; }
+          .header nav div div ul li a {
+            list-style: none;
+            text-decoration: none;
+            color: #ffff; }
+            .header nav div div ul li a:hover {
+              color: #29BB89; }
 
 @media (min-width: 768px) and (max-width: 1024px) {
   .header {
     padding: 0;
-    width: 100vw; }
-    .header div {
-      width: 100vw; }
-      .header div a {
-        padding: 0; } }
+    width: 100%; }
+    .header nav div a {
+      padding: 0; }
+      .header nav div a .logo {
+        margin-left: 2.5rem; } }
 
-@media (min-width: 1025px) and (max-width: 1900px) {
-  .header div a .logo {
-    width: 180px;
-    height: 85px; }
-  .header div nav ul li a {
-    font-size: 1.2rem;
-    margin: 2rem 1rem; }
-  .header div nav ul li:hover {
-    background-color: #27496D;
-    border-radius: 10px; } }
+@media (min-width: 1025px) and (max-width: 2560px) {
+  .header {
+    width: 100%; }
+    .header nav div a .logo {
+      width: 160px;
+      height: 115px;
+      margin-left: 1rem; }
+    .header nav ul {
+      margin: 1rem auto; }
+      .header nav ul .nav-item {
+        margin: 0.5rem 0.8rem; }
+        .header nav ul .nav-item a {
+          font-size: 1.5rem;
+          margin: 2rem 1rem; }
+          .header nav ul .nav-item a:hover {
+            color: #ffff; }
+        .header nav ul .nav-item:hover {
+          background-color: #29BB89;
+          border-radius: 10px; } }
 
 .footer {
-  background-color: #00909E;
+  display: flex;
+  flex-direction: column;
+  background-color: #3A3535;
   margin-top: 10rem;
   width: 100vw;
   padding: 1rem 0rem 2rem 0rem; }
@@ -116,10 +131,11 @@ body {
     font-size: 1.3rem;
     font-family: serif; }
     .footer div h3:hover {
-      color: #142850; }
+      color: #29BB89; }
   .footer div ul {
     list-style: none;
     color: #ffff;
+    margin-right: 2rem;
     padding-top: 0.5rem;
     display: none; }
     .footer div ul li {
@@ -127,10 +143,6 @@ body {
   .footer div p {
     color: #ffff;
     margin-top: 1rem;
-    display: none; }
-  .footer div iframe {
-    border-radius: 0.2rem;
-    margin-top: 0.5rem;
     display: none; }
   .footer div:hover ul {
     display: block; }
@@ -142,7 +154,7 @@ body {
       margin: 0.5rem 0rem 0.5rem 3rem;
       width: 50%;
       border: none;
-      border-bottom: solid 1.5px #142850;
+      border-bottom: solid 1.5px #1E6F5C;
       outline: none; }
       .footer .contenedor__footer--active form .input__suscrib ::placeholder {
         color: #ffff; }
@@ -150,11 +162,11 @@ body {
       border-radius: 0.3rem;
       font-weight: 200;
       margin: 1rem;
-      border: #142850 2px;
+      border: #1E6F5C 2px;
       width: 5rem;
       height: 2rem; }
       .footer .contenedor__footer--active form .input__enviar:hover {
-        background-color: #27496D; }
+        background-color: #29BB89; }
   .footer .contenedor__footer--active .fab {
     color: #ffff;
     font-size: 1.5rem;
@@ -165,110 +177,122 @@ body {
 
 @media (min-width: 768px) and (mas-width: 1024px) {
   .footer {
-    width: 100vw; } }
+    width: 100%; } }
 
-@media (min-width: 1025px) and (max-width: 1900px) {
-  .footer div:hover iframe {
+@media (min-width: 1025px) and (max-width: 2560px) {
+  .footer {
     display: flex;
-    width: 400px;
-    margin: 1rem auto; } }
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-between;
+    width: 100%; }
+    .footer div {
+      padding: 0.5rem 0;
+      margin: 2rem;
+      border-bottom: none;
+      text-align: left; }
+      .footer div h3 {
+        width: 60%;
+        font-weight: 600;
+        margin: 0.5rem;
+        color: #29BB89; }
+        .footer div h3:hover {
+          color: #1E6F5C; }
+      .footer div ul {
+        margin: 0.5rem;
+        padding-top: 0.5rem;
+        padding-left: 0;
+        display: block; }
+        .footer div ul li {
+          padding-bottom: 1rem; }
+      .footer div p {
+        margin-top: 1rem;
+        margin-left: 0.5rem;
+        display: block; }
+    .footer .contenedor__footer--active {
+      padding: 0.5rem 4rem 0.5rem 2rem;
+      margin: 2rem 1rem 2rem 2rem;
+      border-bottom: none;
+      text-align: left; }
+      .footer .contenedor__footer--active form {
+        display: flex; }
+        .footer .contenedor__footer--active form .input__suscrib {
+          margin: 0.5rem;
+          width: 11vw; }
+        .footer .contenedor__footer--active form .input__enviar {
+          background-color: #29BB89; }
+          .footer .contenedor__footer--active form .input__enviar:hover {
+            background-color: #1E6F5C; }
+      .footer .contenedor__footer--active .fab {
+        font-size: 2rem; } }
+
+.grilla1 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas: "header" "contenido" "footer";
+  width: 100%;
+  height: 100vh; }
+
+.header {
+  grid-area: header; }
+
+.contenido {
+  grid-area: contenido;
+  height: 60%; }
+
+.footer {
+  grid-area: footer;
+  width: 100%; }
 
 .grilla1 main {
   width: 100%; }
   .grilla1 main video {
     width: 100vw; }
-  .grilla1 main div div p {
+  .grilla1 main div p {
     width: 94vw;
     font-size: 1rem;
+    line-height: 2rem;
     text-align: center;
     margin: 0.5rem 0.6rem;
     word-spacing: 0.1rem;
     transition: 2s; }
-  .grilla1 main div section {
+  .grilla1 main section {
     padding: 0; }
-    .grilla1 main div section .contenedor {
+    .grilla1 main section .contenedor {
       display: flex;
       flex-direction: column;
       margin: 2rem 0.1rem;
       align-items: center;
-      width: 90vw; }
-      .grilla1 main div section .contenedor div {
+      width: 98vw; }
+      .grilla1 main section .contenedor div {
         flex-direction: column;
         width: 90vw; }
-        .grilla1 main div section .contenedor div h4 {
-          text-align: center;
-          color: #142850;
-          font-size: 1.1rem;
-          font-style: italic;
-          font-weight: 600;
-          margin: 0.1rem 0.2rem;
-          width: 90vw;
-          transition: 2s; }
-        .grilla1 main div section .contenedor div h3 {
-          text-align: center;
-          margin: 0.1rem 0.1rem;
-          padding: 0.1rem;
-          word-spacing: 0.4rem;
-          font-size: 1.5rem;
-          color: #142850;
-          width: 90vw;
-          transition: 2s; }
-        .grilla1 main div section .contenedor div p {
-          text-align: center;
-          margin: 0.5rem 0.4rem;
-          padding: 0.2rem;
-          word-spacing: 0.2rem;
-          line-height: 1.3rem;
-          width: 90vw;
-          transition: 2s; }
-      .grilla1 main div section .contenedor img {
+      .grilla1 main section .contenedor img {
         width: 300px;
         height: 200px;
         margin: 0.1rem 0.1rem;
+        margin-bottom: 2rem;
         padding: 0.1rem;
         box-shadow: 8px 11px 5px -4px rgba(134, 134, 140, 0.49);
         -webkit-box-shadow: 8px 11px 5px -4px rgba(134, 134, 140, 0.49);
         -moz-box-shadow: 8px 11px 5px -4px rgba(134, 134, 140, 0.49);
         transition: 2s; }
-    .grilla1 main div section .contenedorReverse {
+    .grilla1 main section .contenedorReverse {
       display: flex;
       flex-direction: column;
       align-items: center;
       margin: 2rem 0.1rem;
-      width: 90vw; }
-      .grilla1 main div section .contenedorReverse div {
+      width: 98vw; }
+      .grilla1 main section .contenedorReverse div {
         flex-direction: column;
         width: 90vw; }
-        .grilla1 main div section .contenedorReverse div h4 {
-          text-align: center;
-          color: #142850;
-          font-size: 1.1rem;
-          font-style: italic;
-          font-weight: 600;
-          margin: 0.1rem 0.2rem;
-          width: 90vw;
-          transition: 2s; }
-        .grilla1 main div section .contenedorReverse div h3 {
-          text-align: center;
-          margin: 0.1rem 0.1rem;
-          padding: 0.1rem;
-          word-spacing: 0.4rem;
-          font-size: 1.5rem;
-          color: #142850;
-          width: 90vw;
-          transition: 2s; }
-        .grilla1 main div section .contenedorReverse div p {
-          text-align: center;
-          margin: 0.5rem 0.4rem;
-          padding: 0.2rem;
-          word-spacing: 0.2rem;
-          line-height: 1.3rem;
-          width: 90vw;
-          transition: 2s; }
-      .grilla1 main div section .contenedorReverse img {
+      .grilla1 main section .contenedorReverse img {
         width: 300px;
         height: 200px;
         margin: 0.1rem 0.1rem;
+        margin-bottom: 2rem;
         padding: 0.1rem;
         box-shadow: 8px 11px 5px -4px rgba(134, 134, 140, 0.49);
         -webkit-box-shadow: 8px 11px 5px -4px rgba(134, 134, 140, 0.49);
@@ -276,89 +300,123 @@ body {
         transition: 2s; }
 
 @media (min-width: 768px) and (max-width: 1024px) {
-  .grilla1 main div div p {
+  .grilla1 main video {
+    width: 100%; }
+  .grilla1 main div p {
     line-height: 2.5rem;
-    padding: 1rem 2rem; }
-  .grilla1 main div section .contenedor {
+    padding: 1rem 2rem;
+    width: 98vw; }
+  .grilla1 main section .contenedor {
     margin: 2rem; }
-    .grilla1 main div section .contenedor div p {
+    .grilla1 main section .contenedor div p {
       line-height: 2rem; }
-    .grilla1 main div section .contenedor img {
+    .grilla1 main section .contenedor img {
       margin-top: 2rem; }
-  .grilla1 main div section .contenedorReverse {
+  .grilla1 main section .contenedorReverse {
     margin: 2rem; }
-    .grilla1 main div section .contenedorReverse div p {
+    .grilla1 main section .contenedorReverse div p {
       line-height: 2rem; }
-    .grilla1 main div section .contenedorReverse img {
+    .grilla1 main section .contenedorReverse img {
       margin-top: 2rem; } }
 
-@media (min-width: 1025px) and (max-width: 1900px) {
-  .grilla1 main div div p {
+@media (min-width: 1025px) and (max-width: 2560px) {
+  .grilla1 .contenido div p {
     line-height: 3rem;
     padding: 4rem; }
-  .grilla1 main div section .contenedor {
+  .grilla1 .contenido section .contenedor {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    padding: 4rem 1rem; }
-    .grilla1 main div section .contenedor div {
+    padding: 4rem 1rem;
+    margin: 2rem auto; }
+    .grilla1 .contenido section .contenedor div {
       width: 50vw;
       margin-top: 2rem; }
-      .grilla1 main div section .contenedor div h4 {
+      .grilla1 .contenido section .contenedor div h4 {
         width: 50vw;
         font-size: 1.5rem;
         margin-bottom: 1rem; }
-      .grilla1 main div section .contenedor div h3 {
+      .grilla1 .contenido section .contenedor div h3 {
         width: 50vw;
         font-size: 1.5rem; }
-      .grilla1 main div section .contenedor div p {
+      .grilla1 .contenido section .contenedor div p {
         width: 50vw;
         line-height: 2rem; }
-    .grilla1 main div section .contenedor img {
+    .grilla1 .contenido section .contenedor img {
       width: 400px;
       height: 300px; }
-  .grilla1 main div section .contenedorReverse {
+  .grilla1 .contenido section .contenedorReverse {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-around;
-    padding: 4rem 1rem; }
-    .grilla1 main div section .contenedorReverse div {
+    padding: 4rem 1rem;
+    margin: 2rem auto; }
+    .grilla1 .contenido section .contenedorReverse div {
       width: 50vw;
       margin-top: 2rem; }
-      .grilla1 main div section .contenedorReverse div h4 {
+      .grilla1 .contenido section .contenedorReverse div h4 {
         width: 50vw;
         font-size: 1.5rem;
         margin-bottom: 1rem; }
-      .grilla1 main div section .contenedorReverse div h3 {
+      .grilla1 .contenido section .contenedorReverse div h3 {
         width: 50vw;
         font-size: 1.5rem; }
-      .grilla1 main div section .contenedorReverse div p {
+      .grilla1 .contenido section .contenedorReverse div p {
         width: 50vw;
         line-height: 2rem; }
-    .grilla1 main div section .contenedorReverse img {
+    .grilla1 .contenido section .contenedorReverse img {
       width: 400px;
       height: 300px; } }
+
+.grilla2 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas: "header" "contenido2" "footer";
+  width: 100%;
+  height: 100vh; }
+
+.header {
+  grid-area: header; }
+
+.contenido2 {
+  grid-area: contenido2;
+  height: 60%; }
+
+.footer {
+  grid-area: footer; }
 
 .grilla2 main section div {
   display: flex;
   flex-direction: column;
-  margin: 1rem 0.1rem;
+  margin: 1rem 0;
   width: 99vw; }
   .grilla2 main section div div {
     flex-direction: column;
     margin: 0.2rem; }
     .grilla2 main section div div h1 {
+      background-color: #29BB89;
+      color: #ffff;
       text-align: center;
-      margin-bottom: 1.5rem; }
+      margin-bottom: 1.5rem;
+      padding: 1.5rem 0;
+      border-bottom: solid 1rem #1E6F5C; }
     .grilla2 main section div div p {
       text-align: center;
       word-spacing: 0.2rem;
       font-size: 0.8rem;
       padding: 1rem 2rem; }
   .grilla2 main section div img {
-    width: 300px;
-    height: 415px;
-    margin: 3rem 3rem; }
+    width: 290px;
+    height: 380px;
+    margin: 3rem auto; }
+
+.grilla2 main section .galeria {
+  display: none; }
+
+.grilla2 main section .galeria--active {
+  display: none; }
 
 @media (min-width: 768px) and (max-width: 1024px) {
   .grilla2 main section div {
@@ -372,9 +430,23 @@ body {
     .grilla2 main section div img {
       width: 500px;
       height: 470px;
-      margin: 3rem 8.8rem; } }
+      margin: 3rem 8.8rem; }
+  .grilla2 main section .galeria {
+    display: flex;
+    flex-direction: column;
+    margin: 0; }
+    .grilla2 main section .galeria .galeria__hijo {
+      display: flex;
+      flex-direction: row;
+      margin: 0; }
+      .grilla2 main section .galeria .galeria__hijo img {
+        width: 50vw;
+        height: 300px;
+        margin: 0; }
+  .grilla2 .footer {
+    margin-top: 1rem; } }
 
-@media (min-width: 1025px) and (max-width: 1900px) {
+@media (min-width: 1025px) and (max-width: 2560px) {
   .grilla2 main section div {
     display: flex;
     flex-direction: row;
@@ -396,52 +468,108 @@ body {
       width: 700px;
       margin-top: 3rem;
       margin-left: 2.5rem;
-      margin-right: 4rem; } }
+      margin-right: 4rem; }
+  .grilla2 main section .galeria {
+    display: flex;
+    flex-direction: row;
+    margin: 0; }
+    .grilla2 main section .galeria .galeria__hijo {
+      display: flex;
+      flex-direction: row;
+      margin: 0; }
+      .grilla2 main section .galeria .galeria__hijo img {
+        width: 25vw;
+        margin: 0; }
+  .grilla2 main section .galeria--active {
+    display: flex;
+    flex-direction: row;
+    margin: 0; }
+    .grilla2 main section .galeria--active .galeria__hijo {
+      display: flex;
+      flex-direction: row;
+      margin: 0; }
+      .grilla2 main section .galeria--active .galeria__hijo img {
+        width: 25vw;
+        margin: 0; } }
 
-.grilla3 main section div {
+.grilla3 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas: "header" "contenido3" "footer";
+  width: 100%;
+  height: 100vh; }
+
+.header {
+  grid-area: header; }
+
+.contenido3 {
+  grid-area: contenido3;
+  width: 99vw;
+  margin-top: 2rem; }
+
+.footer {
+  grid-area: footer; }
+
+.grilla3 main section div h1 {
+  color: #ffff;
+  background-color: #29BB89;
+  border-bottom: solid 1rem #1E6F5C;
   text-align: center;
-  word-spacing: 0.5rem;
-  margin-top: 1rem;
-  font-size: 1.5rem;
-  color: #142850; }
+  padding: 2rem 0; }
 
-.grilla3 main section .destinos div {
-  display: flex;
-  flex-direction: column; }
-  .grilla3 main section .destinos div div h3 {
-    text-align: center;
-    margin-bottom: 1rem;
-    font-size: 1.6rem;
-    color: #142850; }
-  .grilla3 main section .destinos div div p {
-    margin: 0;
-    text-align: center;
-    font-size: 0.8rem;
-    word-spacing: 0.4rem;
-    line-height: 1.3rem; }
-  .grilla3 main section .destinos div img {
-    width: 300px;
-    height: 200px;
-    margin: 3rem auto; }
-
-.grilla3 main section .destinos .experiencia {
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-  .grilla3 main section .destinos .experiencia div h4 {
-    text-align: center;
-    font-size: 1.6rem;
-    font-style: italic;
-    margin: 1rem; }
-  .grilla3 main section .destinos .experiencia div p {
-    text-align: center;
-    font-size: 0.8rem;
-    word-spacing: 0.4rem;
-    line-height: 1.3rem; }
-  .grilla3 main section .destinos .experiencia img {
-    width: 280px;
-    height: 230px;
-    margin: 2rem; }
+.grilla3 main section .destinos {
+  margin-top: 3rem; }
+  .grilla3 main section .destinos div {
+    display: flex;
+    flex-direction: column; }
+    .grilla3 main section .destinos div div {
+      text-align: center;
+      word-spacing: 0.5rem;
+      margin-top: 1rem;
+      font-size: 1.5rem; }
+      .grilla3 main section .destinos div div h3 {
+        text-align: center;
+        margin-bottom: 1rem;
+        font-size: 1.6rem;
+        background-color: #1E6F5C;
+        color: #ffff;
+        font-weight: 600;
+        padding: 0.5rem 0;
+        border-left: solid 0.5rem #29BB89;
+        border-right: solid 0.5rem #29BB89; }
+      .grilla3 main section .destinos div div p {
+        margin: 0;
+        text-align: center;
+        font-size: 0.8rem;
+        word-spacing: 0.4rem;
+        line-height: 1.7rem; }
+    .grilla3 main section .destinos div img {
+      width: 300px;
+      height: 200px;
+      margin: 3rem auto; }
+  .grilla3 main section .destinos .experiencia {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .grilla3 main section .destinos .experiencia div h4 {
+      text-align: center;
+      font-size: 1.6rem;
+      font-style: italic;
+      margin: 1rem;
+      background-color: #1E6F5C;
+      color: #ffff;
+      border-left: solid 0.5rem #29BB89; }
+    .grilla3 main section .destinos .experiencia div p {
+      text-align: center;
+      font-size: 0.8rem;
+      word-spacing: 0.4rem;
+      line-height: 1.7rem; }
+    .grilla3 main section .destinos .experiencia img {
+      width: 280px;
+      height: 230px;
+      margin: 2rem; }
 
 @media (min-width: 768px) and (max-width: 1024px) {
   .grilla3 main section .destinos div div {
@@ -455,16 +583,11 @@ body {
     width: 400px;
     height: 310px; } }
 
-@media (min-width: 1025px) and (max-width: 1900px) {
-  .grilla3 main section div {
-    text-align: center;
-    margin-bottom: 2rem;
-    font-size: 2rem;
-    color: #142850; }
-    .grilla3 main section div h1 {
-      background-color: #27496D;
-      font-weight: 600;
-      padding: 2rem 0; }
+@media (min-width: 1025px) and (max-width: 2560px) {
+  .grilla3 main section div h1 {
+    background-color: #29BB89;
+    font-weight: 600;
+    padding: 2rem 0; }
   .grilla3 main section .destinos div .third__text {
     display: flex;
     flex-direction: column; }
@@ -472,7 +595,7 @@ body {
       text-align: center;
       margin-bottom: 2rem;
       font-size: 2rem;
-      color: #142850; }
+      color: #ffff; }
     .grilla3 main section .destinos div .third__text p {
       text-align: center;
       font-size: 1.2rem;
@@ -481,7 +604,12 @@ body {
       padding: 1rem 10rem; }
   .grilla3 main section .destinos div img {
     width: 950px;
-    height: 520px; }
+    height: 520px;
+    border-radius: 1.5rem;
+    box-shadow: 8px 11px 5px -4px rgba(134, 134, 140, 0.49);
+    -webkit-box-shadow: 8px 11px 5px -4px rgba(134, 134, 140, 0.49);
+    -moz-box-shadow: 8px 11px 5px -4px rgba(134, 134, 140, 0.49);
+    transition: 2s; }
   .grilla3 main section .destinos .experiencia {
     display: flex;
     flex-direction: row; }
@@ -504,51 +632,73 @@ body {
       width: 530px;
       height: 400px; } }
 
+.grilla4 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas: "header" "contenido4" "footer";
+  width: 100%;
+  height: 100vh; }
+
+.header {
+  grid-area: header; }
+
+.contenido4 {
+  grid-area: contenido4; }
+
+.footer {
+  grid-area: footer; }
+
 .grilla4 main {
   width: 99vw; }
-  .grilla4 main div section {
+  .grilla4 main section {
     width: 78%;
-    background-color: #142850;
+    background-color: #1E6F5C;
     margin: 2.5rem auto;
     padding: 1.5rem 0.2rem;
     border-radius: 0.5rem; }
-    .grilla4 main div section h2 {
+    .grilla4 main section h2 {
       color: #ffff;
+      background-color: #29BB89;
       text-align: center;
       font-size: 1.2rem;
-      margin: 2rem; }
-    .grilla4 main div section form {
+      font-weight: 600;
+      margin: 2rem;
+      padding: 1rem 0;
+      border-radius: 0.5rem; }
+    .grilla4 main section form {
       text-align: center; }
-      .grilla4 main div section form label {
+      .grilla4 main section form label {
         color: #ffff;
         font-weight: 600;
         text-align: left;
         display: inline-block;
         width: 60%;
         margin-right: 3rem; }
-      .grilla4 main div section form input:focus {
+      .grilla4 main section form input:focus {
         outline: none; }
-      .grilla4 main div section form select {
+      .grilla4 main section form select {
         display: block;
         margin: 1rem 4rem 3rem 2.6rem;
-        background-color: #00909E;
+        background-color: #3A3535;
         color: #ffff; }
-      .grilla4 main div section form textarea {
+      .grilla4 main section form textarea {
         height: 5rem;
         resize: none; }
-      .grilla4 main div section form .form__input--submit {
-        background-color: #00909E;
+      .grilla4 main section form .form__input--submit {
+        background-color: #3A3535;
         color: #ffff;
         display: block;
-        width: 25%;
+        justify-items: center;
         height: 3rem;
-        font-size: 0.8rem;
+        font-size: 1rem;
         letter-spacing: 0.1rem;
         font-weight: 600;
         margin: 1.5rem auto;
         border-radius: 0.5rem; }
-        .grilla4 main div section form .form__input--submit:hover {
-          background-color: #27496D; }
+        .grilla4 main section form .form__input--submit:hover {
+          background-color: #29BB89; }
 
 @media (min-width: 768px) and (max-width: 1024px) {
   .grilla4 main section {
@@ -560,7 +710,7 @@ body {
     .grilla4 main section form .select {
       margin: 1rem 4rem 3rem 4.6rem; } }
 
-@media (min-width: 1025px) and (max-width: 1900px) {
+@media (min-width: 1025px) and (max-width: 2560px) {
   .grilla4 main section h2 {
     font-size: 2rem; }
   .grilla4 main section form .form__label {
@@ -569,74 +719,112 @@ body {
   .grilla4 main section form .select {
     margin-left: 8.5rem; }
   .grilla4 main section form .form__input--submit {
+    width: auto;
     font-size: 1.1rem;
     padding: 2rem 15rem; } }
 
+.grilla5 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas: "header" "contenido5" "footer";
+  width: 100%;
+  height: 100vh; }
+
+.header {
+  grid-area: header;
+  width: 100%; }
+
+.contenido5 {
+  grid-area: contenido5; }
+
+.footer {
+  grid-area: footer; }
+
 .grilla5 main section h1 {
-  width: 90vw;
+  width: 100%;
   margin: 2rem 0;
-  color: #142850;
+  color: #ffff;
+  background-color: #29BB89;
+  border-bottom: solid 1rem #1E6F5C;
+  padding: 2rem 0;
   font-weight: 600;
   text-align: center; }
 
-.grilla5 main section div div h4 {
-  font-style: italic;
-  color: #142850;
-  text-align: center;
-  font-weight: 400; }
+.grilla5 main section .paquetes .g-4 {
+  margin: 0.2rem; }
+  .grilla5 main section .paquetes .g-4 div {
+    padding: 0; }
+    .grilla5 main section .paquetes .g-4 div div .card-img-top {
+      height: 300px; }
+    .grilla5 main section .paquetes .g-4 div div div h5 {
+      background-color: #1E6F5C;
+      color: #ffff;
+      padding: 0.5rem 0; }
+    .grilla5 main section .paquetes .g-4 div div div .subtitulo__paquetes {
+      color: #3A3535;
+      font-weight: 600; }
+    .grilla5 main section .paquetes .g-4 div div div div {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .grilla5 main section .paquetes .g-4 div div div div a button {
+        background-color: #29BB89;
+        border: none;
+        border-radius: 0.2rem;
+        padding: 0.5rem 1rem;
+        color: #ffff;
+        margin: 1rem; }
+        .grilla5 main section .paquetes .g-4 div div div div a button:hover {
+          background-color: #1E6F5C; }
 
-.grilla5 main section div div .subtitulo__plan {
-  font-weight: 600; }
-
-.grilla5 main section div div .parrafo__paquetes {
-  font-size: 0.8rem;
-  text-align: center;
-  margin-bottom: 3rem; }
-
-.grilla5 main section div img {
-  width: 300px;
-  height: 250px;
-  margin: 3rem; }
+.grilla5 main section .incluye {
+  margin-top: 8rem; }
+  .grilla5 main section .incluye div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem 0.2rem; }
+    .grilla5 main section .incluye div div img {
+      width: 200px;
+      border-radius: 20rem; }
+    .grilla5 main section .incluye div div div {
+      text-align: center; }
+      .grilla5 main section .incluye div div div h3 {
+        color: #3A3535;
+        font-weight: 600; }
 
 @media (min-width: 768px) and (max-width: 1024px) {
   .grilla5 main section h1 {
     width: 99vw;
     font-size: 3rem; }
-  .grilla5 main section div {
-    display: flex;
-    flex-direction: column;
-    justify-items: center; }
-    .grilla5 main section div div h4 {
-      font-weight: 600; }
-    .grilla5 main section div div .subtitulo__plan {
-      text-align: center; }
-    .grilla5 main section div div .parrafo__paquetes {
-      font-size: 1rem;
-      line-height: 2rem;
-      word-spacing: 0.5rem;
-      padding: 1rem 2rem; }
-    .grilla5 main section div img {
-      margin: 3rem auto;
-      width: 350px; } }
+  .grilla5 main section .paquetes .g-4 div .card {
+    margin: 0 1rem; } }
 
-@media (min-width: 1025px) and (max-width: 1900px) {
+@media (min-width: 1025px) and (max-width: 2560px) {
   .grilla5 main section h1 {
     color: #ffff;
-    background-color: #27496D;
+    background-color: #29BB89;
     width: 100vw;
     padding: 2rem 0; }
-  .grilla5 main section div div {
-    margin-top: 3rem; }
-    .grilla5 main section div div h4 {
-      font-size: 2rem; }
-    .grilla5 main section div div .subtitulo__plan {
-      font-size: 1.5rem;
-      text-align: center; }
-    .grilla5 main section div div .parrafo__paquetes {
-      font-size: 1.2rem;
-      padding: 1rem 4rem;
-      line-height: 2.5rem; }
-  .grilla5 main section div img {
-    width: 500px;
-    height: 400px;
-    margin: 2rem 28rem; } }
+  .grilla5 main section .paquetes {
+    margin: 0; }
+    .grilla5 main section .paquetes .g-4 {
+      margin: 0; }
+      .grilla5 main section .paquetes .g-4 .col {
+        margin: 0;
+        padding: 0; }
+        .grilla5 main section .paquetes .g-4 .col .card {
+          margin: 4rem 0.5rem; }
+  .grilla5 main section .incluye {
+    margin-top: 14rem; }
+    .grilla5 main section .incluye div {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around; }
+      .grilla5 main section .incluye div div {
+        display: flex;
+        flex-direction: column; }
+        .grilla5 main section .incluye div div div h3:hover {
+          color: #1E6F5C; } }

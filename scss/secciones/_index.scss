@@ -1,4 +1,32 @@
 //Seccion Home
+//Aplicando grid
+.grilla1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+        "header"
+        "contenido"
+        "footer";
+    width: 100%;
+    height: 100vh;
+}
+
+.header {
+    grid-area: header;
+}
+
+.contenido {
+    grid-area: contenido;
+    height: 60%;
+}
+
+.footer {
+    grid-area: footer;
+    width: 100%;
+}
+
 //Main
 .grilla1 {
     main {
@@ -9,134 +37,96 @@
         }
 
         div {
-            div {
-                p {
-                    width: 94vw;
-                    font-size: 1rem;
-                    text-align: center;
-                    margin: 0.5rem 0.6rem;
-                    word-spacing: 0.1rem;
+            p {
+                width: 94vw;
+                font-size: 1rem;
+                line-height: 2rem;
+                text-align: center;
+                margin: 0.5rem 0.6rem;
+                word-spacing: 0.1rem;
+                transition: 2s;
+            }
+        }
+
+        //seccion
+        section {
+            padding: 0;
+
+            .contenedor {
+                display: flex;
+                flex-direction: column;
+                margin: 2rem 0.1rem;
+                align-items: center;
+                width: 98vw;
+
+                div {
+                    flex-direction: column;
+                    width: 90vw;
+
+                    h4 {
+                        @extend %h4Inicio;
+                    }
+
+                    h3 {
+                        @extend %h3Inicio;
+                    }
+
+                    p {
+                        @extend %pInicio;
+                    }
+                }
+
+                img {
+                    width: 300px;
+                    height: 200px;
+                    margin: 0.1rem 0.1rem;
+                    margin-bottom: 2rem;
+                    padding: 0.1rem;
+                    box-shadow: 8px 11px 5px -4px rgba(134, 134, 140, 0.49);
+                    -webkit-box-shadow: 8px 11px 5px -4px rgba(134, 134, 140, 0.49);
+                    -moz-box-shadow: 8px 11px 5px -4px rgba(134, 134, 140, 0.49);
                     transition: 2s;
                 }
             }
 
-            //seccion
-            section {
-                padding: 0;
+            .contenedorReverse {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin: 2rem 0.1rem;
+                width: 98vw;
 
-                .contenedor {
-                    display: flex;
+                div {
                     flex-direction: column;
-                    margin: 2rem 0.1rem;
-                    align-items: center;
                     width: 90vw;
 
-                    div {
-                        flex-direction: column;
-                        width: 90vw;
-
-                        h4 {
-                            text-align: center;
-                            color: $azul-oscuro;
-                            font-size: 1.1rem;
-                            font-style: italic;
-                            font-weight: 600;
-                            margin: 0.1rem 0.2rem;
-                            width: 90vw;
-                            transition: 2s;
-                        }
-
-                        h3 {
-                            text-align: center;
-                            margin: 0.1rem 0.1rem;
-                            padding: 0.1rem;
-                            word-spacing: 0.4rem;
-                            font-size: 1.5rem;
-                            color: $azul-oscuro;
-                            width: 90vw;
-                            transition: 2s;
-                        }
-
-                        p {
-                            text-align: center;
-                            margin: 0.5rem 0.4rem;
-                            padding: 0.2rem;
-                            word-spacing: 0.2rem;
-                            line-height: 1.3rem;
-                            width: 90vw;
-                            transition: 2s;
-                        }
+                    h4 {
+                        @extend %h4Inicio;
                     }
 
-                    img {
-                        width: 300px;
-                        height: 200px;
-                        margin: 0.1rem 0.1rem;
-                        padding: 0.1rem;
-                        box-shadow: 8px 11px 5px -4px rgba(134, 134, 140, 0.49);
-                        -webkit-box-shadow: 8px 11px 5px -4px rgba(134, 134, 140, 0.49);
-                        -moz-box-shadow: 8px 11px 5px -4px rgba(134, 134, 140, 0.49);
-                        transition: 2s;
+                    h3 {
+                        @extend %h3Inicio;
+                    }
+
+                    p {
+                        @extend %pInicio;
                     }
                 }
 
-                .contenedorReverse {
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    margin: 2rem 0.1rem;
-                    width: 90vw;
-
-                    div {
-                        flex-direction: column;
-                        width: 90vw;
-
-                        h4 {
-                            text-align: center;
-                            color: $azul-oscuro;
-                            font-size: 1.1rem;
-                            font-style: italic;
-                            font-weight: 600;
-                            margin: 0.1rem 0.2rem;
-                            width: 90vw;
-                            transition: 2s;
-                        }
-
-                        h3 {
-                            text-align: center;
-                            margin: 0.1rem 0.1rem;
-                            padding: 0.1rem;
-                            word-spacing: 0.4rem;
-                            font-size: 1.5rem;
-                            color: $azul-oscuro;
-                            width: 90vw;
-                            transition: 2s;
-                        }
-
-                        p {
-                            text-align: center;
-                            margin: 0.5rem 0.4rem;
-                            padding: 0.2rem;
-                            word-spacing: 0.2rem;
-                            line-height: 1.3rem;
-                            width: 90vw;
-                            transition: 2s;
-                        }
-                    }
-
-                    img {
-                        width: 300px;
-                        height: 200px;
-                        margin: 0.1rem 0.1rem;
-                        padding: 0.1rem;
-                        box-shadow: 8px 11px 5px -4px rgba(134, 134, 140, 0.49);
-                        -webkit-box-shadow: 8px 11px 5px -4px rgba(134, 134, 140, 0.49);
-                        -moz-box-shadow: 8px 11px 5px -4px rgba(134, 134, 140, 0.49);
-                        transition: 2s;
-                    }
+                img {
+                    width: 300px;
+                    height: 200px;
+                    margin: 0.1rem 0.1rem;
+                    margin-bottom: 2rem;
+                    padding: 0.1rem;
+                    box-shadow: 8px 11px 5px -4px rgba(134, 134, 140, 0.49);
+                    -webkit-box-shadow: 8px 11px 5px -4px rgba(134, 134, 140, 0.49);
+                    -moz-box-shadow: 8px 11px 5px -4px rgba(134, 134, 140, 0.49);
+                    transition: 2s;
                 }
             }
         }
+
     }
 }
 
@@ -145,128 +135,133 @@
 @media (min-width: 768px) and (max-width: 1024px) {
     .grilla1 {
         main {
+            video {
+                width: 100%;
+            }
+
             div {
-                div {
-                    p {
-                        line-height: 2.5rem;
-                        padding: 1rem 2rem;
+                p {
+                    line-height: 2.5rem;
+                    padding: 1rem 2rem;
+                    width: 98vw;
+                }
+            }
+
+            section {
+                .contenedor {
+                    margin: 2rem;
+
+                    div {
+                        p {
+                            line-height: 2rem;
+                        }
+                    }
+
+                    img {
+                        margin-top: 2rem;
                     }
                 }
 
-                section {
-                    .contenedor {
-                        margin: 2rem;
+                .contenedorReverse {
+                    margin: 2rem;
 
-                        div {
-                            p {
-                                line-height: 2rem;
-                            }
-                        }
-
-                        img {
-                            margin-top: 2rem;
+                    div {
+                        p {
+                            line-height: 2rem;
                         }
                     }
 
-                    .contenedorReverse {
-                        margin: 2rem;
-
-                        div {
-                            p {
-                                line-height: 2rem;
-                            }
-                        }
-
-                        img {
-                            margin-top: 2rem;
-                        }
+                    img {
+                        margin-top: 2rem;
                     }
                 }
             }
+
         }
     }
 }
 
 //Media Desktop
-@media (min-width: 1025px) and (max-width: 1900px) {
+@media (min-width: 1025px) and (max-width: 2560px) {
     .grilla1 {
-        main {
+        .contenido {
             div {
-                div {
-                    p {
-                        line-height: 3rem;
-                        padding: 4rem;
+                p {
+                    line-height: 3rem;
+                    padding: 4rem;
+                }
+            }
+
+            section {
+                .contenedor {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-around;
+                    padding: 4rem 1rem;
+                    margin: 2rem auto;
+
+                    div {
+                        width: 50vw;
+                        margin-top: 2rem;
+
+                        h4 {
+                            width: 50vw;
+                            font-size: 1.5rem;
+                            margin-bottom: 1rem;
+                        }
+
+                        h3 {
+                            width: 50vw;
+                            font-size: 1.5rem;
+                        }
+
+                        p {
+                            width: 50vw;
+                            line-height: 2rem;
+                        }
+                    }
+
+                    img {
+                        width: 400px;
+                        height: 300px;
                     }
                 }
 
-                section {
-                    .contenedor {
-                        display: flex;
-                        flex-direction: row;
-                        justify-content: space-around;
-                        padding: 4rem 1rem;
+                .contenedorReverse {
+                    display: flex;
+                    flex-direction: row-reverse;
+                    justify-content: space-around;
+                    padding: 4rem 1rem;
+                    margin: 2rem auto;
 
-                        div {
+                    div {
+                        width: 50vw;
+                        margin-top: 2rem;
+
+                        h4 {
                             width: 50vw;
-                            margin-top: 2rem;
-
-                            h4 {
-                                width: 50vw;
-                                font-size: 1.5rem;
-                                margin-bottom: 1rem;
-                            }
-
-                            h3 {
-                                width: 50vw;
-                                font-size: 1.5rem;
-                            }
-
-                            p {
-                                width: 50vw;
-                                line-height: 2rem;
-                            }
+                            font-size: 1.5rem;
+                            margin-bottom: 1rem;
                         }
 
-                        img {
-                            width: 400px;
-                            height: 300px;
+                        h3 {
+                            width: 50vw;
+                            font-size: 1.5rem;
+                        }
+
+                        p {
+                            width: 50vw;
+                            line-height: 2rem;
                         }
                     }
 
-                    .contenedorReverse {
-                        display: flex;
-                        flex-direction: row-reverse;
-                        justify-content: space-around;
-                        padding: 4rem 1rem;
-
-                        div {
-                            width: 50vw;
-                            margin-top: 2rem;
-
-                            h4 {
-                                width: 50vw;
-                                font-size: 1.5rem;
-                                margin-bottom: 1rem;
-                            }
-
-                            h3 {
-                                width: 50vw;
-                                font-size: 1.5rem;
-                            }
-
-                            p {
-                                width: 50vw;
-                                line-height: 2rem;
-                            }
-                        }
-
-                        img {
-                            width: 400px;
-                            height: 300px;
-                        }
+                    img {
+                        width: 400px;
+                        height: 300px;
                     }
                 }
             }
+
         }
     }
 }
